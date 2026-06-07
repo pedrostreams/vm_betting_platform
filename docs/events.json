@@ -1,0 +1,646 @@
+{
+  "eventList": [
+    {
+      "eventId": "7846540.1",
+      "homeParticipant": "Saudi-Arabia",
+      "homeParticipantShortName": "Saudi Ara",
+      "awayParticipant": "Uruguay",
+      "awayParticipantShortName": "Uruguay",
+      "eventName": "Saudi-Arabia - Uruguay",
+      "sportId": "FBL",
+      "startTime": "2026-06-16T00:00:00.000+02:00",
+      "tournament": {
+        "id": "45613",
+        "name": "Internasjonal - Fotball-VM"
+      },
+      "country": {
+        "id": "110",
+        "name": "Internasjonal"
+      },
+      "broadcastingInfo": [
+        "NRK1"
+      ],
+      "mainMarket": {
+        "marketId": "68512913.1",
+        "marketName": "HUB",
+        "selections": [
+          {
+            "selectionId": "324856857.1",
+            "selectionValue": "H",
+            "selectionName": "Saudi-Arabia",
+            "selectionShortName": "Saudi Ara",
+            "selectionOdds": "7.20"
+          },
+          {
+            "selectionId": "324856858.1",
+            "selectionValue": "D",
+            "selectionName": "Uavgjort",
+            "selectionShortName": "Uavgjort",
+            "selectionOdds": "4.00"
+          },
+          {
+            "selectionId": "324856859.1",
+            "selectionValue": "A",
+            "selectionName": "Uruguay",
+            "selectionShortName": "Uruguay",
+            "selectionOdds": "1.47"
+          }
+        ],
+        "marketLineType": "MONEY",
+        "betStart": "2025-12-09T11:39:40.000+01:00",
+        "betStop": "2026-06-16T00:00:00.000+02:00",
+        "live": false
+      }
+    },
+    {
+      "eventId": "7846531.1",
+      "homeParticipant": "Iran",
+      "homeParticipantShortName": "Iran",
+      "awayParticipant": "New Zealand",
+      "awayParticipantShortName": "New Zealand",
+      "eventName": "Iran - New Zealand",
+      "sportId": "FBL",
+      "startTime": "2026-06-16T03:00:00.000+02:00",
+      "tournament": {
+        "id": "45613",
+        "name": "Internasjonal - Fotball-VM"
+      },
+      "country": {
+        "id": "110",
+        "name": "Internasjonal"
+      },
+      "broadcastingInfo": [
+        "NRK1"
+      ],
+      "mainMarket": {
+        "marketId": "68512904.1",
+        "marketName": "HUB",
+        "selections": [
+          {
+            "selectionId": "324856830.1",
+            "selectionValue": "H",
+            "selectionName": "Iran",
+            "selectionShortName": "Iran",
+            "selectionOdds": "1.90"
+          },
+          {
+            "selectionId": "324856831.1",
+            "selectionValue": "D",
+            "selectionName": "Uavgjort",
+            "selectionShortName": "Uavgjort",
+            "selectionOdds": "3.30"
+          },
+          {
+            "selectionId": "324856832.1",
+            "selectionValue": "A",
+            "selectionName": "New Zealand",
+            "selectionShortName": "New Zealand",
+            "selectionOdds": "4.20"
+          }
+        ],
+        "marketLineType": "MONEY",
+        "betStart": "2025-12-09T11:39:38.000+01:00",
+        "betStop": "2026-06-16T03:00:00.000+02:00",
+        "live": false
+      }
+    },
+    {
+      "eventId": "7846538.1",
+      "homeParticipant": "Frankrike",
+      "homeParticipantShortName": "Frankrike",
+      "awayParticipant": "Senegal",
+      "awayParticipantShortName": "Senegal",
+      "eventName": "Frankrike - Senegal",
+      "sportId": "FBL",
+      "startTime": "2026-06-16T21:00:00.000+02:00",
+      "tournament": {
+        "id": "45613",
+        "name": "Internasjonal - Fotball-VM"
+      },
+      "country": {
+        "id": "110",
+        "name": "Internasjonal"
+      },
+      "broadcastingInfo": [
+        "TV2-1"
+      ],
+      "mainMarket": {
+        "marketId": "68512911.1",
+        "marketName": "HUB",
+        "selections": [
+          {
+            "selectionId": "324856851.1",
+            "selectionValue": "H",
+            "selectionName": "Frankrike",
+            "selectionShortName": "Frankrike",
+            "selectionOdds": "1.47"
+          },
+          {
+            "selectionId": "324856852.1",
+            "selectionValue": "D",
+            "selectionName": "Uavgjort",
+            "selectionShortName": "Uavgjort",
+            "selectionOdds": "4.20"
+          },
+          {
+            "selectionId": "324856853.1",
+            "selectionValue": "A",
+            "selectionName": "Senegal",
+            "selectionShortName": "Senegal",
+            "selectionOdds": "6.80"
+          }
+        ],
+        "marketLineType": "MONEY",
+        "betStart": "2025-12-09T11:39:39.000+01:00",
+        "betStop": "2026-06-16T21:00:00.000+02:00",
+        "live": false
+      }
+    },
+    {
+      "eventId": "7274917.1",
+      "eventName": "Norges Fotball-VM 2026",
+      "sportId": "FBL",
+      "startTime": "2026-06-16T23:59:00.000+02:00",
+      "tournament": {
+        "id": "62417",
+        "name": "VM 2026 - Spesialer"
+      },
+      "country": {
+        "id": "110",
+        "name": "Internasjonal"
+      },
+      "broadcastingInfo": [
+        "TV2-1",
+        "NRK1"
+      ]
+    },
+    {
+      "eventId": "8209410.1",
+      "homeParticipant": "Irak",
+      "homeParticipantShortName": "Irak",
+      "awayParticipant": "Norge",
+      "awayParticipantShortName": "Norge",
+      "eventName": "Irak - Norge",
+      "sportId": "FBL",
+      "startTime": "2026-06-17T00:00:00.000+02:00",
+      "tournament": {
+        "id": "45613",
+        "name": "Internasjonal - Fotball-VM"
+      },
+      "country": {
+        "id": "110",
+        "name": "Internasjonal"
+      },
+      "broadcastingInfo": [
+        "TV2-1"
+      ],
+      "mainMarket": {
+        "marketId": "70334185.1",
+        "marketName": "HUB",
+        "selections": [
+          {
+            "selectionId": "332146785.1",
+            "selectionValue": "H",
+            "selectionName": "Irak",
+            "selectionShortName": "Irak",
+            "selectionOdds": "13.00"
+          },
+          {
+            "selectionId": "332146786.1",
+            "selectionValue": "D",
+            "selectionName": "Uavgjort",
+            "selectionShortName": "Uavgjort",
+            "selectionOdds": "6.30"
+          },
+          {
+            "selectionId": "332146787.1",
+            "selectionValue": "A",
+            "selectionName": "Norge",
+            "selectionShortName": "Norge",
+            "selectionOdds": "1.20"
+          }
+        ],
+        "marketLineType": "MONEY",
+        "betStart": "2026-04-01T09:04:01.000+02:00",
+        "betStop": "2026-06-17T00:00:00.000+02:00",
+        "live": false
+      }
+    },
+    {
+      "eventId": "7846541.1",
+      "homeParticipant": "Argentina",
+      "homeParticipantShortName": "Argentina",
+      "awayParticipant": "Algerie",
+      "awayParticipantShortName": "Algerie",
+      "eventName": "Argentina - Algerie",
+      "sportId": "FBL",
+      "startTime": "2026-06-17T03:00:00.000+02:00",
+      "tournament": {
+        "id": "45613",
+        "name": "Internasjonal - Fotball-VM"
+      },
+      "country": {
+        "id": "110",
+        "name": "Internasjonal"
+      },
+      "broadcastingInfo": [
+        "NRK1"
+      ],
+      "mainMarket": {
+        "marketId": "68512914.1",
+        "marketName": "HUB",
+        "selections": [
+          {
+            "selectionId": "324856860.1",
+            "selectionValue": "H",
+            "selectionName": "Argentina",
+            "selectionShortName": "Argentina",
+            "selectionOdds": "1.40"
+          },
+          {
+            "selectionId": "324856861.1",
+            "selectionValue": "D",
+            "selectionName": "Uavgjort",
+            "selectionShortName": "Uavgjort",
+            "selectionOdds": "4.20"
+          },
+          {
+            "selectionId": "324856862.1",
+            "selectionValue": "A",
+            "selectionName": "Algerie",
+            "selectionShortName": "Algerie",
+            "selectionOdds": "8.65"
+          }
+        ],
+        "marketLineType": "MONEY",
+        "betStart": "2025-12-09T11:39:40.000+01:00",
+        "betStop": "2026-06-17T03:00:00.000+02:00",
+        "live": false
+      }
+    },
+    {
+      "eventId": "7846535.1",
+      "homeParticipant": "Østerrike",
+      "homeParticipantShortName": "Østerrike",
+      "awayParticipant": "Jordan",
+      "awayParticipantShortName": "Jordan",
+      "eventName": "Østerrike - Jordan",
+      "sportId": "FBL",
+      "startTime": "2026-06-17T06:00:00.000+02:00",
+      "tournament": {
+        "id": "45613",
+        "name": "Internasjonal - Fotball-VM"
+      },
+      "country": {
+        "id": "110",
+        "name": "Internasjonal"
+      },
+      "broadcastingInfo": [
+        "NRK1"
+      ],
+      "mainMarket": {
+        "marketId": "68512908.1",
+        "marketName": "HUB",
+        "selections": [
+          {
+            "selectionId": "324856842.1",
+            "selectionValue": "H",
+            "selectionName": "Østerrike",
+            "selectionShortName": "Østerrike",
+            "selectionOdds": "1.33"
+          },
+          {
+            "selectionId": "324856843.1",
+            "selectionValue": "D",
+            "selectionName": "Uavgjort",
+            "selectionShortName": "Uavgjort",
+            "selectionOdds": "4.80"
+          },
+          {
+            "selectionId": "324856844.1",
+            "selectionValue": "A",
+            "selectionName": "Jordan",
+            "selectionShortName": "Jordan",
+            "selectionOdds": "9.35"
+          }
+        ],
+        "marketLineType": "MONEY",
+        "betStart": "2025-12-09T11:39:39.000+01:00",
+        "betStop": "2026-06-17T06:00:00.000+02:00",
+        "live": false
+      }
+    },
+    {
+      "eventId": "8209407.1",
+      "homeParticipant": "Portugal",
+      "homeParticipantShortName": "Portugal",
+      "awayParticipant": "DR Kongo",
+      "awayParticipantShortName": "DR Kongo",
+      "eventName": "Portugal - DR Kongo",
+      "sportId": "FBL",
+      "startTime": "2026-06-17T19:00:00.000+02:00",
+      "tournament": {
+        "id": "45613",
+        "name": "Internasjonal - Fotball-VM"
+      },
+      "country": {
+        "id": "110",
+        "name": "Internasjonal"
+      },
+      "broadcastingInfo": [
+        "NRK1"
+      ],
+      "mainMarket": {
+        "marketId": "70334026.1",
+        "marketName": "HUB",
+        "selections": [
+          {
+            "selectionId": "332146289.1",
+            "selectionValue": "H",
+            "selectionName": "Portugal",
+            "selectionShortName": "Portugal",
+            "selectionOdds": "1.27"
+          },
+          {
+            "selectionId": "332146290.1",
+            "selectionValue": "D",
+            "selectionName": "Uavgjort",
+            "selectionShortName": "Uavgjort",
+            "selectionOdds": "5.10"
+          },
+          {
+            "selectionId": "332146291.1",
+            "selectionValue": "A",
+            "selectionName": "DR Kongo",
+            "selectionShortName": "DR Kongo",
+            "selectionOdds": "11.50"
+          }
+        ],
+        "marketLineType": "MONEY",
+        "betStart": "2026-04-01T08:40:03.000+02:00",
+        "betStop": "2026-06-17T19:00:00.000+02:00",
+        "live": false
+      }
+    },
+    {
+      "eventId": "7846544.1",
+      "homeParticipant": "England",
+      "homeParticipantShortName": "England",
+      "awayParticipant": "Kroatia",
+      "awayParticipantShortName": "Kroatia",
+      "eventName": "England - Kroatia",
+      "sportId": "FBL",
+      "startTime": "2026-06-17T22:00:00.000+02:00",
+      "tournament": {
+        "id": "45613",
+        "name": "Internasjonal - Fotball-VM"
+      },
+      "country": {
+        "id": "110",
+        "name": "Internasjonal"
+      },
+      "broadcastingInfo": [
+        "TV2-1"
+      ],
+      "mainMarket": {
+        "marketId": "68512917.1",
+        "marketName": "HUB",
+        "selections": [
+          {
+            "selectionId": "324856869.1",
+            "selectionValue": "H",
+            "selectionName": "England",
+            "selectionShortName": "England",
+            "selectionOdds": "1.72"
+          },
+          {
+            "selectionId": "324856870.1",
+            "selectionValue": "D",
+            "selectionName": "Uavgjort",
+            "selectionShortName": "Uavgjort",
+            "selectionOdds": "3.60"
+          },
+          {
+            "selectionId": "324856871.1",
+            "selectionValue": "A",
+            "selectionName": "Kroatia",
+            "selectionShortName": "Kroatia",
+            "selectionOdds": "4.80"
+          }
+        ],
+        "marketLineType": "MONEY",
+        "betStart": "2025-12-09T11:39:44.000+01:00",
+        "betStop": "2026-06-17T22:00:00.000+02:00",
+        "live": false
+      }
+    },
+    {
+      "eventId": "7846542.1",
+      "homeParticipant": "Ghana",
+      "homeParticipantShortName": "Ghana",
+      "awayParticipant": "Panama",
+      "awayParticipantShortName": "Panama",
+      "eventName": "Ghana - Panama",
+      "sportId": "FBL",
+      "startTime": "2026-06-18T01:00:00.000+02:00",
+      "tournament": {
+        "id": "45613",
+        "name": "Internasjonal - Fotball-VM"
+      },
+      "country": {
+        "id": "110",
+        "name": "Internasjonal"
+      },
+      "broadcastingInfo": [
+        "TV2-1"
+      ],
+      "mainMarket": {
+        "marketId": "68512915.1",
+        "marketName": "HUB",
+        "selections": [
+          {
+            "selectionId": "324856863.1",
+            "selectionValue": "H",
+            "selectionName": "Ghana",
+            "selectionShortName": "Ghana",
+            "selectionOdds": "2.05"
+          },
+          {
+            "selectionId": "324856864.1",
+            "selectionValue": "D",
+            "selectionName": "Uavgjort",
+            "selectionShortName": "Uavgjort",
+            "selectionOdds": "3.30"
+          },
+          {
+            "selectionId": "324856865.1",
+            "selectionValue": "A",
+            "selectionName": "Panama",
+            "selectionShortName": "Panama",
+            "selectionOdds": "3.65"
+          }
+        ],
+        "marketLineType": "MONEY",
+        "betStart": "2025-12-09T11:39:43.000+01:00",
+        "betStop": "2026-06-18T01:00:00.000+02:00",
+        "live": false
+      }
+    },
+    {
+      "eventId": "7846543.1",
+      "homeParticipant": "Usbekistan",
+      "homeParticipantShortName": "Uzbekista",
+      "awayParticipant": "Colombia",
+      "awayParticipantShortName": "Colombia",
+      "eventName": "Usbekistan - Colombia",
+      "sportId": "FBL",
+      "startTime": "2026-06-18T04:00:00.000+02:00",
+      "tournament": {
+        "id": "45613",
+        "name": "Internasjonal - Fotball-VM"
+      },
+      "country": {
+        "id": "110",
+        "name": "Internasjonal"
+      },
+      "broadcastingInfo": [
+        "TV2-1"
+      ],
+      "mainMarket": {
+        "marketId": "68512916.1",
+        "marketName": "HUB",
+        "selections": [
+          {
+            "selectionId": "324856866.1",
+            "selectionValue": "H",
+            "selectionName": "Usbekistan",
+            "selectionShortName": "Uzbekista",
+            "selectionOdds": "7.80"
+          },
+          {
+            "selectionId": "324856867.1",
+            "selectionValue": "D",
+            "selectionName": "Uavgjort",
+            "selectionShortName": "Uavgjort",
+            "selectionOdds": "4.20"
+          },
+          {
+            "selectionId": "324856868.1",
+            "selectionValue": "A",
+            "selectionName": "Colombia",
+            "selectionShortName": "Colombia",
+            "selectionOdds": "1.42"
+          }
+        ],
+        "marketLineType": "MONEY",
+        "betStart": "2025-12-09T11:39:44.000+01:00",
+        "betStop": "2026-06-18T04:00:00.000+02:00",
+        "live": false
+      }
+    },
+    {
+      "eventId": "7863325.1",
+      "homeParticipant": "Norge",
+      "homeParticipantShortName": "Norge",
+      "awayParticipant": "Senegal",
+      "awayParticipantShortName": "Senegal",
+      "eventName": "Norge - Senegal",
+      "sportId": "FBL",
+      "startTime": "2026-06-23T02:00:00.000+02:00",
+      "tournament": {
+        "id": "45613",
+        "name": "Internasjonal - Fotball-VM"
+      },
+      "country": {
+        "id": "110",
+        "name": "Internasjonal"
+      },
+      "broadcastingInfo": [
+        "NRK1"
+      ],
+      "mainMarket": {
+        "marketId": "68603516.1",
+        "marketName": "HUB",
+        "selections": [
+          {
+            "selectionId": "325241172.1",
+            "selectionValue": "H",
+            "selectionName": "Norge",
+            "selectionShortName": "Norge",
+            "selectionOdds": "2.00"
+          },
+          {
+            "selectionId": "325241173.1",
+            "selectionValue": "D",
+            "selectionName": "Uavgjort",
+            "selectionShortName": "Uavgjort",
+            "selectionOdds": "3.40"
+          },
+          {
+            "selectionId": "325241174.1",
+            "selectionValue": "A",
+            "selectionName": "Senegal",
+            "selectionShortName": "Senegal",
+            "selectionOdds": "3.30"
+          }
+        ],
+        "marketLineType": "MONEY",
+        "betStart": "2025-12-15T13:15:08.000+01:00",
+        "betStop": "2026-06-23T02:00:00.000+02:00",
+        "live": false
+      }
+    },
+    {
+      "eventId": "7863344.1",
+      "homeParticipant": "Norge",
+      "homeParticipantShortName": "Norge",
+      "awayParticipant": "Frankrike",
+      "awayParticipantShortName": "Frankrike",
+      "eventName": "Norge - Frankrike",
+      "sportId": "FBL",
+      "startTime": "2026-06-26T21:00:00.000+02:00",
+      "tournament": {
+        "id": "45613",
+        "name": "Internasjonal - Fotball-VM"
+      },
+      "country": {
+        "id": "110",
+        "name": "Internasjonal"
+      },
+      "broadcastingInfo": [
+        "NRK1"
+      ],
+      "mainMarket": {
+        "marketId": "68603587.1",
+        "marketName": "HUB",
+        "selections": [
+          {
+            "selectionId": "325241502.1",
+            "selectionValue": "H",
+            "selectionName": "Norge",
+            "selectionShortName": "Norge",
+            "selectionOdds": "4.20"
+          },
+          {
+            "selectionId": "325241503.1",
+            "selectionValue": "D",
+            "selectionName": "Uavgjort",
+            "selectionShortName": "Uavgjort",
+            "selectionOdds": "3.65"
+          },
+          {
+            "selectionId": "325241504.1",
+            "selectionValue": "A",
+            "selectionName": "Frankrike",
+            "selectionShortName": "Frankrike",
+            "selectionOdds": "1.70"
+          }
+        ],
+        "marketLineType": "MONEY",
+        "betStart": "2025-12-15T13:34:49.000+01:00",
+        "betStop": "2026-06-26T21:00:00.000+02:00",
+        "live": false
+      }
+    }
+  ]
+}
