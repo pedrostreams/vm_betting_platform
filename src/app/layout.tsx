@@ -14,9 +14,34 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : "http://localhost:3000");
+
+const TITLE = "VM 2026 — Tippebongen";
+const DESCRIPTION =
+  "Tipp gruppespill, sluttspill og special bets for fotball-VM 2026. Lag din egen liga og kjemp om toppen.";
+
 export const metadata: Metadata = {
-  title: "VM 2026 — Tippekonkurranse",
-  description: "Tipp gruppespill, sluttspill og special bets for VM 2026.",
+  metadataBase: new URL(siteUrl),
+  title: TITLE,
+  description: DESCRIPTION,
+  applicationName: "VM 2026",
+  openGraph: {
+    type: "website",
+    locale: "nb_NO",
+    siteName: "VM 2026",
+    title: TITLE,
+    description: DESCRIPTION,
+    url: "/",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
 };
 
 export default function RootLayout({

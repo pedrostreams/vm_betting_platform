@@ -20,13 +20,12 @@ from curl_cffi import requests as cr
 ROOT = Path(__file__).resolve().parent.parent
 SOFA = "https://api.sofascore.com/api/v1"
 
-# Curated subset of the ~115 Sofascore fields we surface in the panel.
-KEEP = [
-    "matches", "goalsScored", "goalsConceded", "cleanSheets",
-    "averageBallPossession", "shots", "shotsOnTarget", "bigChances",
-    "accuratePassesPercentage", "avgRating", "duelsWonPercentage",
-    "yellowCards", "redCards",
-]
+# Non-stat keys to drop; we keep the full statistics object otherwise.
+DROP_KEYS = {"id", "statisticsType"}
+
+
+def round_floats(d: dict) -> dict:
+    return {k: (round(v, 2) if isinstance(v, float) else v) for k, v in d.items() if k not in DROP_KEYS}
 
 
 def load_env() -> dict:
@@ -79,19 +78,14 @@ def find_team(name: str):
     return teams[0] if teams else None
 
 
-# Per-player fields we keep from the top-players tab.
-PLAYER_CATS = ["goals", "assists", "rating", "goalsAssistsSum", "keyPasses", "totalShots"]
-
-
 def top_players(team_id: int, utid: int, season_id: int) -> list[dict]:
+    """All squad players with EVERY stat category from the team's Players tab."""
     data = sofa_get(
         f"{SOFA}/team/{team_id}/unique-tournament/{utid}/season/{season_id}/top-players/overall"
     )
     tp = (data or {}).get("topPlayers", {})
     players: dict[int, dict] = {}
     for cat, lst in tp.items():
-        if cat not in PLAYER_CATS and cat != "rating":
-            continue
         for item in lst:
             pl = item.get("player", {})
             pid = pl.get("id")
@@ -106,7 +100,7 @@ def top_players(team_id: int, utid: int, season_id: int) -> list[dict]:
             if val is not None:
                 rec[cat] = round(val, 2) if isinstance(val, float) else val
     out = list(players.values())
-    out.sort(key=lambda p: (p.get("goalsAssistsSum", 0), p.get("rating", 0)), reverse=True)
+    out.sort(key=lambda p: (p.get("goalsAssistsSum", 0) or 0, p.get("rating", 0) or 0), reverse=True)
     return out
 
 
@@ -163,7 +157,7 @@ def main() -> int:
             "sofascore_id": sid,
             "source_tournament": f"{sname} {year}".strip(),
             "matches": s.get("matches"),
-            "stats": {k: s[k] for k in KEEP if k in s},
+            "stats": round_floats(s),
             "top_players": players,
         })
         print(f"[{i}/{len(teams)}] {t['name']:<22} <- {sname} {year} ({s.get('matches')} kamper, {len(players)} spillere)")

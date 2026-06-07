@@ -35,7 +35,14 @@ export async function updateSession(request: NextRequest) {
   const isPublic =
     pathname.startsWith("/login") ||
     pathname.startsWith("/auth") ||
-    pathname.startsWith("/api/cron");
+    pathname.startsWith("/api/cron") ||
+    // Public metadata/share assets — crawlers must reach these without auth.
+    pathname.startsWith("/opengraph-image") ||
+    pathname.startsWith("/twitter-image") ||
+    pathname.startsWith("/icon") ||
+    pathname === "/robots.txt" ||
+    pathname === "/sitemap.xml" ||
+    pathname === "/manifest.webmanifest";
 
   if (!user && !isPublic) {
     const url = request.nextUrl.clone();

@@ -34,7 +34,7 @@ export default async function HomePage() {
   const [matches, picks, profileRes, scoreRes, news, standings] = await Promise.all([
     loadMatches(supabase, { stage: "GROUP_STAGE" }),
     loadUserPicks(supabase, user!.id),
-    supabase.from("profiles").select("display_name").eq("id", user!.id).single(),
+    supabase.from("profiles").select("display_name, full_name").eq("id", user!.id).single(),
     supabase.from("user_scores").select("total_points").eq("user_id", user!.id).maybeSingle(),
     fetchNews(6),
     loadFirstPoolStandings(supabase, user!.id),
@@ -46,7 +46,7 @@ export default async function HomePage() {
     .sort((a, b) => new Date(a.lock_at).getTime() - new Date(b.lock_at).getTime());
   const today = matches.filter((m) => isToday(m.utc_date));
 
-  const firstName = (profileRes.data?.display_name ?? "");
+  const firstName = (profileRes.data?.full_name ?? profileRes.data?.display_name ?? "").split(" ")[0];
   const totalPoints = scoreRes.data?.total_points ?? 0;
 
   return (
@@ -219,9 +219,14 @@ function StandingsCard({
                 )}
               >
                 <span className="w-5 text-center tabular-nums text-muted-foreground">{i + 1}</span>
-                <span className="flex-1 truncate">
-                  {r.name}
-                  {r.userId === meId && <span className="ml-1.5 text-xs text-primary">(deg)</span>}
+                <span className="min-w-0 flex-1">
+                  <span className="flex items-center gap-1.5 truncate">
+                    {r.name}
+                    {r.userId === meId && <span className="text-xs text-primary">(deg)</span>}
+                  </span>
+                  {r.fullName && (
+                    <span className="block truncate text-xs text-muted-foreground">{r.fullName}</span>
+                  )}
                 </span>
                 <span className="font-semibold tabular-nums">{r.total}</span>
               </li>

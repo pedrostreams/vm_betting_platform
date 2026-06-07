@@ -37,17 +37,19 @@ export default async function LeaderboardPage({ params }: { params: Promise<{ id
   const ids = members.map((m) => m.user_id);
   const [{ data: pool }, { data: profiles }, { data: scores }] = await Promise.all([
     supabase.from("pools").select("name, invite_code").eq("id", id).single(),
-    supabase.from("profiles").select("id, display_name").in("id", ids),
+    supabase.from("profiles").select("id, display_name, full_name").in("id", ids),
     supabase.from("user_scores").select("*").in("user_id", ids),
   ]);
 
   const nameById = new Map((profiles ?? []).map((p) => [p.id, p.display_name as string]));
+  const fullNameById = new Map((profiles ?? []).map((p) => [p.id, p.full_name as string | null]));
   const scoreById = new Map((scores ?? []).map((s) => [s.user_id, s as unknown as ScoreRow]));
 
   const rows = ids
     .map((uid) => ({
       uid,
       name: nameById.get(uid) ?? "—",
+      fullName: fullNameById.get(uid) ?? null,
       s: scoreById.get(uid) ?? {
         total_points: 0,
         group_points: 0,
@@ -98,9 +100,14 @@ export default async function LeaderboardPage({ params }: { params: Promise<{ id
                   <TableCell className="text-center tabular-nums text-muted-foreground">
                     {i + 1}
                   </TableCell>
-                  <TableCell className="font-medium">
-                    {r.name}
-                    {me && <span className="ml-2 text-xs text-primary">(deg)</span>}
+                  <TableCell>
+                    <div className="flex items-center gap-2">
+                      <span className="font-medium">{r.name}</span>
+                      {me && <span className="text-xs text-primary">(deg)</span>}
+                    </div>
+                    {r.fullName && (
+                      <div className="text-xs text-muted-foreground">{r.fullName}</div>
+                    )}
                   </TableCell>
                   <TableCell className="text-right tabular-nums text-muted-foreground">
                     {r.s.group_points}

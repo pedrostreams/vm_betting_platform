@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
 import { Button } from "@/components/ui/button";
@@ -22,14 +22,6 @@ export default function OnboardingPage() {
   const [displayName, setDisplayName] = useState("");
   const [agreed, setAgreed] = useState(false);
   const [loading, setLoading] = useState(false);
-
-  // Prefill name from the auth profile if available.
-  useEffect(() => {
-    supabase.auth.getUser().then(({ data }) => {
-      const meta = data.user?.user_metadata as { full_name?: string; name?: string } | undefined;
-      if (meta?.full_name || meta?.name) setDisplayName(meta.full_name ?? meta.name ?? "");
-    });
-  }, [supabase]);
 
   async function save(e: React.FormEvent) {
     e.preventDefault();
@@ -64,11 +56,11 @@ export default function OnboardingPage() {
         <CardContent>
           <form onSubmit={save} className="space-y-5">
             <div className="space-y-1.5">
-              <Label htmlFor="name">Visningsnavn</Label>
+              <Label htmlFor="name">Lagnavn</Label>
               <Input
                 id="name"
                 required
-                placeholder="Hva skal du hete på tabellen?"
+                placeholder="Hva skal laget ditt hete?"
                 value={displayName}
                 onChange={(e) => setDisplayName(e.target.value)}
               />
@@ -83,7 +75,7 @@ export default function OnboardingPage() {
               />
               <Label htmlFor="terms" className="text-sm font-normal leading-snug">
                 Jeg godtar vilkårene og bekrefter en innsats (buy-in) på{" "}
-                <span className="font-semibold">200 kr</span>. Oppgjør skjer utenfor appen.
+                <span className="font-semibold">200 kr</span>.
               </Label>
             </div>
 

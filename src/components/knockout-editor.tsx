@@ -6,6 +6,8 @@ import { cn } from "@/lib/utils";
 import type { MatchView, Pick } from "@/lib/types";
 import { TeamBadge } from "@/components/team-badge";
 import { MatchStatsPanel } from "@/components/match-stats-panel";
+import { MatchPickerStrip } from "@/components/match-picker-strip";
+import { MobileStatsSheet } from "@/components/mobile-stats-sheet";
 import type { TeamInsight } from "@/lib/insights";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Button } from "@/components/ui/button";
@@ -126,9 +128,25 @@ export function KnockoutEditor({
         </div>
       )}
 
+      {/* Mobile match navigator — horizontal strip (desktop uses the left rail) */}
+      {anyTeamsKnown && (
+        <MatchPickerStrip
+          className="lg:hidden"
+          sections={byStage.map(({ stage, matches: ms }) => ({
+            key: stage,
+            label: stageLabel(stage),
+            matches: ms,
+          }))}
+          picks={picks}
+          selectedId={selectedId}
+          isLocked={isLocked}
+          onSelect={setSelectedId}
+        />
+      )}
+
       <div className="grid gap-4 lg:grid-cols-[16rem_1fr_18rem]">
         {/* LEFT — stage/match navigator */}
-        <aside className="rounded-xl border bg-card lg:sticky lg:top-[4.5rem] lg:h-[calc(100dvh-6rem)]">
+        <aside className="hidden rounded-xl border bg-card lg:sticky lg:top-[4.5rem] lg:block lg:h-[calc(100dvh-6rem)]">
           <ScrollArea className="h-full p-2">
             {byStage.map(({ stage, matches: ms }) => {
               const done = ms.filter((m) => picks[m.id]).length;
@@ -203,6 +221,13 @@ export function KnockoutEditor({
             />
           ) : (
             <p className="text-muted-foreground">Ingen kamper.</p>
+          )}
+
+          {/* Mobile stats — on-demand bottom sheet (desktop uses the right rail) */}
+          {selected && (
+            <div className="mt-4 lg:hidden">
+              <MobileStatsSheet match={selected} insights={insights} />
+            </div>
           )}
         </section>
 
