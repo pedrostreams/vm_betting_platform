@@ -1,0 +1,2308 @@
+
+> vm26@0.1.0 dev
+> next dev
+
+⚠ Port 3000 is in use by process 40192, using available port 3001 instead.
+▲ Next.js 16.2.7 (Turbopack)
+- Local:         http://localhost:3001
+- Network:       http://10.241.248.86:3001
+- Environments: .env.local
+✓ Ready in 500ms
+
+○ Compiling /login ...
+ GET /login 200 in 7.6s (next.js: 6.3s, proxy.ts: 518ms, application-code: 740ms)
+ GET /login 200 in 70ms (next.js: 7ms, proxy.ts: 8ms, application-code: 55ms)
+ GET /login 200 in 498ms (next.js: 13ms, proxy.ts: 22ms, application-code: 463ms)
+ GET /login 200 in 498ms (next.js: 100ms, proxy.ts: 125ms, application-code: 273ms)
+ GET /login 200 in 589ms (next.js: 31ms, proxy.ts: 27ms, application-code: 531ms)
+ GET /login 200 in 533ms (next.js: 62ms, proxy.ts: 58ms, application-code: 412ms)
+ GET /login 200 in 537ms (next.js: 171ms, proxy.ts: 64ms, application-code: 303ms)
+ GET /login 200 in 541ms (next.js: 112ms, proxy.ts: 61ms, application-code: 368ms)
+ GET /login 200 in 660ms (next.js: 217ms, proxy.ts: 66ms, application-code: 377ms)
+ GET /login 200 in 640ms (next.js: 260ms, proxy.ts: 61ms, application-code: 319ms)
+ GET /login 200 in 698ms (next.js: 78ms, proxy.ts: 53ms, application-code: 566ms)
+ GET /login 200 in 556ms (next.js: 55ms, proxy.ts: 55ms, application-code: 446ms)
+ GET /login 200 in 558ms (next.js: 111ms, proxy.ts: 58ms, application-code: 389ms)
+ GET /login 200 in 561ms (next.js: 169ms, proxy.ts: 60ms, application-code: 332ms)
+ GET /login 200 in 653ms (next.js: 224ms, proxy.ts: 63ms, application-code: 366ms)
+ GET /login 200 in 628ms (next.js: 97ms, proxy.ts: 223ms, application-code: 308ms)
+ GET /login 200 in 762ms (next.js: 36ms, proxy.ts: 36ms, application-code: 690ms)
+ GET /login 200 in 665ms (next.js: 68ms, proxy.ts: 57ms, application-code: 541ms)
+ GET /login 200 in 660ms (next.js: 222ms, proxy.ts: 65ms, application-code: 373ms)
+ GET /login 200 in 667ms (next.js: 156ms, proxy.ts: 59ms, application-code: 452ms)
+ GET /login 200 in 719ms (next.js: 53ms, proxy.ts: 312ms, application-code: 354ms)
+ GET /login 200 in 728ms (next.js: 130ms, proxy.ts: 313ms, application-code: 285ms)
+ GET /login 200 in 567ms (next.js: 26ms, proxy.ts: 23ms, application-code: 518ms)
+ GET /login 200 in 451ms (next.js: 39ms, proxy.ts: 69ms, application-code: 344ms)
+ GET /login 200 in 443ms (next.js: 116ms, proxy.ts: 65ms, application-code: 261ms)
+ GET /login 200 in 451ms (next.js: 190ms, proxy.ts: 67ms, application-code: 194ms)
+ GET /login 200 in 385ms (next.js: 172ms, proxy.ts: 107ms, application-code: 105ms)
+ GET /auth/callback?code=dc1e5857-6717-4066-9918-3c582b9ce13a 307 in 2.3s (next.js: 1100ms, proxy.ts: 10ms, application-code: 1178ms)
+ GET /api/cron/news?secret=change-me-to-a-long-random-string 200 in 2.4s (next.js: 1209ms, proxy.ts: 11ms, application-code: 1151ms)
+ GET /onboarding 200 in 1991ms (next.js: 1312ms, proxy.ts: 192ms, application-code: 488ms)
+ GET /api/cron/odds?secret= 401 in 85ms (next.js: 56ms, proxy.ts: 18ms, application-code: 11ms)
+○ Compiling / ...
+ GET / 200 in 4.6s (next.js: 3.6s, proxy.ts: 252ms, application-code: 760ms)
+ GET /api/cron/odds?secret=change-me-to-a-long-random-string 200 in 1149ms (next.js: 27ms, proxy.ts: 11ms, application-code: 1110ms)
+ GET /gruppespill 200 in 3.0s (next.js: 1871ms, proxy.ts: 311ms, application-code: 782ms)
+[browser] Image with src "https://crests.football-data.org/769.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/9396.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/798.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+ GET /api/cron/grade?secret=change-me-to-a-long-random-string 200 in 736ms (next.js: 13ms, proxy.ts: 6ms, application-code: 717ms)
+[TypeError: fetch failed] {
+  [cause]: Error [ConnectTimeoutError]: Connect Timeout Error (attempted address: awbpobvatwkajexjdtqr.supabase.co:443, timeout: 10000ms)
+      at ignore-listed frames {
+    code: 'UND_ERR_CONNECT_TIMEOUT'
+  }
+}
+[TypeError: fetch failed] {
+  [cause]: Error: getaddrinfo ENOTFOUND awbpobvatwkajexjdtqr.supabase.co
+      at ignore-listed frames {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'awbpobvatwkajexjdtqr.supabase.co'
+  }
+}
+ GET /login 200 in 724ms (next.js: 11ms, proxy.ts: 655ms, application-code: 58ms)
+✓ Compiled in 232ms
+✓ Compiled in 234ms
+✓ Compiled in 103ms
+ GET /login 200 in 777ms (next.js: 79ms, proxy.ts: 631ms, application-code: 67ms)
+ GET /login 200 in 195ms (next.js: 6ms, proxy.ts: 153ms, application-code: 36ms)
+ GET /login 200 in 443ms (next.js: 9ms, proxy.ts: 382ms, application-code: 52ms)
+ GET /login 200 in 553ms (next.js: 8ms, proxy.ts: 480ms, application-code: 64ms)
+ GET /login 200 in 633ms (next.js: 8ms, proxy.ts: 572ms, application-code: 52ms)
+ GET /login 200 in 232ms (next.js: 11ms, proxy.ts: 145ms, application-code: 76ms)
+ GET /login 200 in 235ms (next.js: 13ms, proxy.ts: 142ms, application-code: 81ms)
+ GET /login 200 in 266ms (next.js: 13ms, proxy.ts: 166ms, application-code: 87ms)
+ GET /login 200 in 259ms (next.js: 13ms, proxy.ts: 152ms, application-code: 95ms)
+ GET /login 200 in 221ms (next.js: 12ms, proxy.ts: 127ms, application-code: 83ms)
+ GET /login 200 in 256ms (next.js: 12ms, proxy.ts: 156ms, application-code: 88ms)
+ GET /login 200 in 233ms (next.js: 10ms, proxy.ts: 136ms, application-code: 87ms)
+ GET /login 200 in 238ms (next.js: 10ms, proxy.ts: 149ms, application-code: 79ms)
+ GET /login 200 in 277ms (next.js: 12ms, proxy.ts: 179ms, application-code: 86ms)
+ GET /login 200 in 409ms (next.js: 8ms, proxy.ts: 342ms, application-code: 59ms)
+ GET /login 200 in 185ms (next.js: 8ms, proxy.ts: 128ms, application-code: 49ms)
+ GET /login 200 in 264ms (next.js: 8ms, proxy.ts: 204ms, application-code: 52ms)
+ GET /login 200 in 323ms (next.js: 8ms, proxy.ts: 255ms, application-code: 59ms)
+ GET /login 200 in 230ms (next.js: 11ms, proxy.ts: 141ms, application-code: 77ms)
+ GET /login 200 in 228ms (next.js: 12ms, proxy.ts: 136ms, application-code: 81ms)
+ GET /login 200 in 242ms (next.js: 11ms, proxy.ts: 143ms, application-code: 87ms)
+ GET /login 200 in 207ms (next.js: 9ms, proxy.ts: 121ms, application-code: 77ms)
+ GET /login 200 in 244ms (next.js: 10ms, proxy.ts: 161ms, application-code: 73ms)
+ GET /login 200 in 202ms (next.js: 7ms, proxy.ts: 136ms, application-code: 59ms)
+ GET /login 200 in 187ms (next.js: 9ms, proxy.ts: 117ms, application-code: 61ms)
+ GET /login 200 in 200ms (next.js: 8ms, proxy.ts: 133ms, application-code: 59ms)
+ GET /login 200 in 180ms (next.js: 8ms, proxy.ts: 115ms, application-code: 58ms)
+ GET /login 200 in 207ms (next.js: 8ms, proxy.ts: 143ms, application-code: 56ms)
+ GET /login 200 in 214ms (next.js: 9ms, proxy.ts: 120ms, application-code: 84ms)
+ GET /login 200 in 239ms (next.js: 10ms, proxy.ts: 148ms, application-code: 82ms)
+ GET /login 200 in 217ms (next.js: 9ms, proxy.ts: 128ms, application-code: 80ms)
+ GET /login 200 in 337ms (next.js: 12ms, proxy.ts: 247ms, application-code: 78ms)
+ GET /login 200 in 230ms (next.js: 11ms, proxy.ts: 134ms, application-code: 85ms)
+ GET /login 200 in 236ms (next.js: 11ms, proxy.ts: 143ms, application-code: 82ms)
+ GET /login 200 in 227ms (next.js: 7ms, proxy.ts: 129ms, application-code: 92ms)
+ GET /login 200 in 258ms (next.js: 22ms, proxy.ts: 140ms, application-code: 96ms)
+ GET /login 200 in 250ms (next.js: 19ms, proxy.ts: 158ms, application-code: 73ms)
+ GET /login 200 in 214ms (next.js: 14ms, proxy.ts: 119ms, application-code: 81ms)
+ GET /login 200 in 251ms (next.js: 9ms, proxy.ts: 163ms, application-code: 79ms)
+ GET /login 200 in 236ms (next.js: 11ms, proxy.ts: 141ms, application-code: 84ms)
+ GET /login 200 in 231ms (next.js: 11ms, proxy.ts: 129ms, application-code: 91ms)
+ GET /login 200 in 228ms (next.js: 9ms, proxy.ts: 141ms, application-code: 77ms)
+ GET /login 200 in 250ms (next.js: 11ms, proxy.ts: 163ms, application-code: 77ms)
+ GET /login 200 in 252ms (next.js: 8ms, proxy.ts: 168ms, application-code: 76ms)
+ GET /login 200 in 202ms (next.js: 10ms, proxy.ts: 125ms, application-code: 67ms)
+ GET /login 200 in 237ms (next.js: 8ms, proxy.ts: 152ms, application-code: 76ms)
+ GET /login 200 in 208ms (next.js: 10ms, proxy.ts: 126ms, application-code: 72ms)
+ GET /login 200 in 197ms (next.js: 8ms, proxy.ts: 120ms, application-code: 69ms)
+ GET /login 200 in 257ms (next.js: 9ms, proxy.ts: 183ms, application-code: 65ms)
+ GET /login 200 in 223ms (next.js: 7ms, proxy.ts: 135ms, application-code: 81ms)
+ GET /login 200 in 194ms (next.js: 8ms, proxy.ts: 115ms, application-code: 71ms)
+ GET /login 200 in 168ms (next.js: 8ms, proxy.ts: 117ms, application-code: 43ms)
+✓ Compiled in 407ms
+ GET /login 200 in 1405ms (next.js: 141ms, proxy.ts: 1152ms, application-code: 112ms)
+[TypeError: fetch failed] {
+  [cause]: Error: read ECONNRESET
+      at ignore-listed frames {
+    errno: -4077,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  }
+}
+ GET /login 200 in 21.7s (next.js: 2ms, proxy.ts: 21.7s, application-code: 13ms)
+[TypeError: fetch failed] {
+  [cause]: Error [ConnectTimeoutError]: Connect Timeout Error (attempted addresses: 172.64.149.246:443, 104.18.38.10:443, timeout: 10000ms)
+      at ignore-listed frames {
+    code: 'UND_ERR_CONNECT_TIMEOUT'
+  }
+}
+[TypeError: fetch failed] {
+  [cause]: Error [ConnectTimeoutError]: Connect Timeout Error (attempted addresses: 172.64.149.246:443, 104.18.38.10:443, timeout: 10000ms)
+      at ignore-listed frames {
+    code: 'UND_ERR_CONNECT_TIMEOUT'
+  }
+}
+[TypeError: fetch failed] {
+  [cause]: Error [ConnectTimeoutError]: Connect Timeout Error (attempted addresses: 172.64.149.246:443, 104.18.38.10:443, timeout: 10000ms)
+      at ignore-listed frames {
+    code: 'UND_ERR_CONNECT_TIMEOUT'
+  }
+}
+[TypeError: fetch failed] {
+  [cause]: Error [ConnectTimeoutError]: Connect Timeout Error (attempted addresses: 172.64.149.246:443, 104.18.38.10:443, timeout: 10000ms)
+      at ignore-listed frames {
+    code: 'UND_ERR_CONNECT_TIMEOUT'
+  }
+}
+[TypeError: fetch failed] {
+  [cause]: Error [ConnectTimeoutError]: Connect Timeout Error (attempted addresses: 172.64.149.246:443, 104.18.38.10:443, timeout: 10000ms)
+      at ignore-listed frames {
+    code: 'UND_ERR_CONNECT_TIMEOUT'
+  }
+}
+ GET /login 200 in 10.9s (next.js: 73ms, proxy.ts: 10.6s, application-code: 215ms)
+ GET /login 200 in 11.0s (next.js: 201ms, proxy.ts: 10.7s, application-code: 78ms)
+ GET /login 200 in 10.9s (next.js: 157ms, proxy.ts: 10.7s, application-code: 126ms)
+ GET /login 200 in 11.0s (next.js: 30ms, proxy.ts: 10.7s, application-code: 268ms)
+ GET /login 200 in 10.9s (next.js: 118ms, proxy.ts: 10.7s, application-code: 171ms)
+[TypeError: fetch failed] {
+  [cause]: Error [ConnectTimeoutError]: Connect Timeout Error (attempted addresses: 172.64.149.246:443, 104.18.38.10:443, timeout: 10000ms)
+      at ignore-listed frames {
+    code: 'UND_ERR_CONNECT_TIMEOUT'
+  }
+}
+ GET /login 200 in 10.7s (next.js: 6ms, proxy.ts: 10.6s, application-code: 49ms)
+[TypeError: fetch failed] {
+  [cause]: Error [ConnectTimeoutError]: Connect Timeout Error (attempted addresses: 172.64.149.246:443, 104.18.38.10:443, timeout: 10000ms)
+      at ignore-listed frames {
+    code: 'UND_ERR_CONNECT_TIMEOUT'
+  }
+}
+[TypeError: fetch failed] {
+  [cause]: Error [ConnectTimeoutError]: Connect Timeout Error (attempted addresses: 172.64.149.246:443, 104.18.38.10:443, timeout: 10000ms)
+      at ignore-listed frames {
+    code: 'UND_ERR_CONNECT_TIMEOUT'
+  }
+}
+ GET /login 200 in 10.5s (next.js: 14ms, proxy.ts: 10.4s, application-code: 86ms)
+ GET /login 200 in 10.5s (next.js: 49ms, proxy.ts: 10.4s, application-code: 48ms)
+✓ Compiled in 104ms
+ GET /login 200 in 777ms (next.js: 132ms, proxy.ts: 544ms, application-code: 101ms)
+ GET /login 200 in 175ms (next.js: 6ms, proxy.ts: 117ms, application-code: 52ms)
+ GET /login 200 in 371ms (next.js: 7ms, proxy.ts: 306ms, application-code: 58ms)
+ GET /login 200 in 217ms (next.js: 7ms, proxy.ts: 161ms, application-code: 49ms)
+ GET /login 200 in 819ms (next.js: 8ms, proxy.ts: 485ms, application-code: 327ms)
+[TypeError: fetch failed] {
+  [cause]: Error [ConnectTimeoutError]: Connect Timeout Error (attempted addresses: 172.64.149.246:443, 104.18.38.10:443, timeout: 10000ms)
+      at ignore-listed frames {
+    code: 'UND_ERR_CONNECT_TIMEOUT'
+  }
+}
+ GET /login 200 in 10.8s (next.js: 9ms, proxy.ts: 10.7s, application-code: 93ms)
+ GET /auth/callback?error=access_denied&error_code=otp_expired&error_description=Email+link+is+invalid+or+has+expired 307 in 3.1s (next.js: 159ms, proxy.ts: 2.9s, application-code: 30ms)
+ GET /login?error=auth 200 in 355ms (next.js: 9ms, proxy.ts: 246ms, application-code: 100ms)
+✓ Compiled in 184ms
+✓ Compiled in 84ms
+✓ Compiled in 40ms
+ GET /login 200 in 474ms (next.js: 37ms, proxy.ts: 405ms, application-code: 32ms)
+ GET /login 200 in 174ms (next.js: 3ms, proxy.ts: 155ms, application-code: 16ms)
+ GET /login 200 in 162ms (next.js: 3ms, proxy.ts: 141ms, application-code: 18ms)
+ GET /login 200 in 161ms (next.js: 3ms, proxy.ts: 143ms, application-code: 15ms)
+✓ Compiled in 65ms
+ GET /login 200 in 442ms (next.js: 38ms, proxy.ts: 372ms, application-code: 32ms)
+ GET /login 200 in 147ms (next.js: 4ms, proxy.ts: 131ms, application-code: 12ms)
+ GET /login 200 in 212ms (next.js: 5ms, proxy.ts: 188ms, application-code: 18ms)
+ GET /login 200 in 262ms (next.js: 3ms, proxy.ts: 238ms, application-code: 21ms)
+ GET /login 200 in 1759ms (next.js: 2ms, proxy.ts: 1741ms, application-code: 17ms)
+ GET /login 200 in 972ms (next.js: 3ms, proxy.ts: 956ms, application-code: 13ms)
+✓ Compiled in 39ms
+ GET /login 200 in 763ms (next.js: 43ms, proxy.ts: 694ms, application-code: 26ms)
+ GET /login 200 in 165ms (next.js: 4ms, proxy.ts: 146ms, application-code: 15ms)
+ GET /login 200 in 136ms (next.js: 3ms, proxy.ts: 115ms, application-code: 18ms)
+ GET /login 200 in 1052ms (next.js: 2ms, proxy.ts: 1039ms, application-code: 11ms)
+ GET /login 200 in 365ms (next.js: 41ms, proxy.ts: 288ms, application-code: 35ms)
+ GET /login 200 in 141ms (next.js: 2ms, proxy.ts: 121ms, application-code: 18ms)
+ GET /login 200 in 157ms (next.js: 3ms, proxy.ts: 135ms, application-code: 19ms)
+ GET /login 200 in 407ms (next.js: 3ms, proxy.ts: 376ms, application-code: 29ms)
+ GET /login 200 in 704ms (next.js: 4ms, proxy.ts: 682ms, application-code: 18ms)
+ GET /login 200 in 679ms (next.js: 5ms, proxy.ts: 657ms, application-code: 18ms)
+ GET /login 200 in 6.3s (next.js: 45ms, proxy.ts: 6.2s, application-code: 29ms)
+ GET /login 200 in 155ms (next.js: 6ms, proxy.ts: 136ms, application-code: 13ms)
+ GET /login 200 in 1197ms (next.js: 74ms, proxy.ts: 1019ms, application-code: 105ms)
+ GET /login 200 in 347ms (next.js: 7ms, proxy.ts: 289ms, application-code: 51ms)
+✓ Compiled in 46ms
+[TypeError: fetch failed] {
+  [cause]: Error [ConnectTimeoutError]: Connect Timeout Error (attempted addresses: 104.18.38.10:443, 172.64.149.246:443, timeout: 10000ms)
+      at ignore-listed frames {
+    code: 'UND_ERR_CONNECT_TIMEOUT'
+  }
+}
+ GET /login 200 in 10.8s (next.js: 51ms, proxy.ts: 10.7s, application-code: 33ms)
+[TypeError: fetch failed] {
+  [cause]: Error [ConnectTimeoutError]: Connect Timeout Error (attempted addresses: 104.18.38.10:443, timeout: 10000ms)
+      at ignore-listed frames {
+    code: 'UND_ERR_CONNECT_TIMEOUT'
+  }
+}
+ GET /login 200 in 10.7s (next.js: 4ms, proxy.ts: 10.7s, application-code: 13ms)
+[TypeError: fetch failed] {
+  [cause]: Error: read ECONNRESET
+      at ignore-listed frames {
+    errno: -4077,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  }
+}
+[TypeError: fetch failed] {
+  [cause]: Error [ConnectTimeoutError]: Connect Timeout Error (attempted addresses: 104.18.38.10:443, 172.64.149.246:443, timeout: 10000ms)
+      at ignore-listed frames {
+    code: 'UND_ERR_CONNECT_TIMEOUT'
+  }
+}
+ GET /login 200 in 11.0s (next.js: 6ms, proxy.ts: 10.6s, application-code: 322ms)
+ GET /auth/callback?error=access_denied&error_code=otp_expired&error_description=Email+link+is+invalid+or+has+expired 307 in 815ms (next.js: 126ms, proxy.ts: 663ms, application-code: 26ms)
+ GET /login?error=auth 200 in 543ms (next.js: 5ms, proxy.ts: 461ms, application-code: 76ms)
+ GET /auth/callback?error=access_denied&error_code=otp_expired&error_description=Email+link+is+invalid+or+has+expired 307 in 301ms (next.js: 7ms, proxy.ts: 286ms, application-code: 8ms)
+ GET /login?error=auth 200 in 230ms (next.js: 8ms, proxy.ts: 132ms, application-code: 91ms)
+✓ Compiled in 78ms
+ GET /login 200 in 543ms (next.js: 53ms, proxy.ts: 445ms, application-code: 45ms)
+ GET /login?error=auth 200 in 528ms (next.js: 4ms, proxy.ts: 496ms, application-code: 28ms)
+ GET /login 200 in 147ms (next.js: 3ms, proxy.ts: 121ms, application-code: 22ms)
+ GET /login?error=auth 200 in 155ms (next.js: 5ms, proxy.ts: 129ms, application-code: 22ms)
+ GET /login 200 in 150ms (next.js: 4ms, proxy.ts: 125ms, application-code: 21ms)
+ GET /login?error=auth 200 in 139ms (next.js: 3ms, proxy.ts: 119ms, application-code: 18ms)
+ GET /onboarding 200 in 1807ms (next.js: 51ms, proxy.ts: 1704ms, application-code: 51ms)
+ GET / 200 in 1501ms (next.js: 232ms, proxy.ts: 316ms, application-code: 953ms)
+[browser] Image with src "https://crests.football-data.org/9396.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/769.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/798.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Base UI: A component that acts as a button expected a native <button> because the `nativeButton` prop is true. Rendering a non-<button> removes native button semantics, which can impact forms and accessibility. Use a real <button> in the `render` prop, or set `nativeButton` to `false`.
+    at Button (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__213la-g._.js?45:398:263)
+    at HomePage (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__213la-g._.js?44:722:306) 
+    at error (file://C:/Users/Peder/Desktop/Hobby/vm26/.next/dev/static/chunks/node_modules_02o_f98._.js:12773:21) (file://C:/Users/Peder/Desktop/Hobby/vm26/.next/dev/static/chunks/node_modules_02o_f98._.js:12773:21)
+[browser] Image with src "https://crests.football-data.org/canada.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/761.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/usa.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/bosnia.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/8030.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+ GET /gruppespill 200 in 797ms (next.js: 26ms, proxy.ts: 226ms, application-code: 545ms)
+ GET / 200 in 685ms (next.js: 4ms, proxy.ts: 158ms, application-code: 524ms)
+ GET /special-bets 200 in 5.5s (next.js: 1550ms, proxy.ts: 154ms, application-code: 3.7s)
+ GET /special-bets 200 in 1482ms (next.js: 4ms, proxy.ts: 1037ms, application-code: 441ms)
+✓ Compiled in 109ms
+ GET /login 200 in 1120ms (next.js: 122ms, proxy.ts: 455ms, application-code: 542ms)
+ GET /login 200 in 517ms (next.js: 20ms, proxy.ts: 451ms, application-code: 46ms)
+ GET /special-bets 200 in 1542ms (next.js: 195ms, proxy.ts: 663ms, application-code: 685ms)
+ GET /special-bets 200 in 931ms (next.js: 8ms, proxy.ts: 187ms, application-code: 737ms)
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+⨯ ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  [90m1 |[0m [36mimport[0m { createClient } [36mfrom[0m [32m"@/lib/supabase/server"[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m { fetchCandidates, normalizeName, [33mPOLYMARKET_SLUG[0m } [36mfrom[0m [32m"@/lib/polymarket"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m [36mimport[0m { [33mSpecialBetsEditor[0m, [36mtype[0m [33mBetVM[0m, [36mtype[0m [33mOption[0m } [36mfrom[0m [32m"@/components/special-bets-editor"[0m;
+  [90m4 |[0m
+  [90m5 |[0m [36mexport[0m [36mdefault[0m [36masync[0m [36mfunction[0m [33mSpecialBetsPage[0m() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+ GET /login 500 in 2.0s (next.js: 1068ms, proxy.ts: 825ms, application-code: 117ms)
+ GET /special-bets 500 in 2.0s (next.js: 1179ms, proxy.ts: 828ms, application-code: 8ms)
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+ GET /login 500 in 254ms (next.js: 6ms, proxy.ts: 238ms, application-code: 9ms)
+⨯ ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  [90m1 |[0m [36mimport[0m { createClient } [36mfrom[0m [32m"@/lib/supabase/server"[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m { fetchCandidates, normalizeName, [33mPOLYMARKET_SLUG[0m } [36mfrom[0m [32m"@/lib/polymarket"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m [36mimport[0m { [33mSpecialBetsEditor[0m, [36mtype[0m [33mBetVM[0m, [36mtype[0m [33mOption[0m } [36mfrom[0m [32m"@/components/special-bets-editor"[0m;
+  [90m4 |[0m
+  [90m5 |[0m [36mexport[0m [36mdefault[0m [36masync[0m [36mfunction[0m [33mSpecialBetsPage[0m() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+ GET /special-bets 500 in 270ms (next.js: 15ms, proxy.ts: 244ms, application-code: 10ms)
+[browser] Uncaught Error: ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+    at <unknown> (Error: ./src/app/(app)/special-bets/page.tsx:2:1)
+    at <unknown> (Error: (./src/app/(app)/special-bets/page.tsx:2:1)
+[browser] Uncaught Error: ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+    at <unknown> (Error: ./src/app/(app)/special-bets/page.tsx:2:1)
+    at <unknown> (Error: (./src/app/(app)/special-bets/page.tsx:2:1)
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+⨯ ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  [90m1 |[0m [36mimport[0m { createClient } [36mfrom[0m [32m"@/lib/supabase/server"[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m { fetchCandidates, normalizeName, [33mPOLYMARKET_SLUG[0m } [36mfrom[0m [32m"@/lib/polymarket"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m [36mimport[0m { [33mSpecialBetsEditor[0m, [36mtype[0m [33mBetVM[0m, [36mtype[0m [33mOption[0m } [36mfrom[0m [32m"@/components/special-bets-editor"[0m;
+  [90m4 |[0m
+  [90m5 |[0m [36mexport[0m [36mdefault[0m [36masync[0m [36mfunction[0m [33mSpecialBetsPage[0m() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+ GET /special-bets 500 in 370ms (next.js: 16ms, proxy.ts: 331ms, application-code: 23ms)
+[browser] Uncaught Error: ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+    at <unknown> (Error: ./src/app/(app)/special-bets/page.tsx:2:1)
+    at <unknown> (Error: (./src/app/(app)/special-bets/page.tsx:2:1)
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+[browser] ./src/app/(app)/special-bets/page.tsx:2:1
+Export normalizeName doesn't exist in target module
+  1 | import { createClient } from "@/lib/supabase/server";
+> 2 | import { fetchCandidates, normalizeName, POLYMARKET_SLUG } from "@/lib/polymarket";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { SpecialBetsEditor, type BetVM, type Option } from "@/components/special-bets-editor";
+  4 |
+  5 | export default async function SpecialBetsPage() {
+
+The export normalizeName was not found in module [project]/src/lib/polymarket.ts [app-rsc] (ecmascript).
+Did you mean to import fetchCandidates?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+✓ Compiled in 100ms
+ GET /login 200 in 1432ms (next.js: 127ms, proxy.ts: 508ms, application-code: 796ms)
+ GET /special-bets 200 in 2.4s (next.js: 211ms, proxy.ts: 999ms, application-code: 1184ms)
+ GET /liga 200 in 1631ms (next.js: 1084ms, proxy.ts: 159ms, application-code: 387ms)
+✓ Compiled in 139ms
+ GET /liga 200 in 757ms (next.js: 212ms, proxy.ts: 374ms, application-code: 172ms)
+ GET /login 200 in 886ms (next.js: 24ms, proxy.ts: 810ms, application-code: 52ms)
+ POST /liga 200 in 1418ms (next.js: 6ms, proxy.ts: 277ms, application-code: 1135ms)
+  └─ ƒ createPool({}) in 494ms src/app/(app)/liga/actions.ts
+ GET /liga 200 in 610ms (next.js: 6ms, proxy.ts: 140ms, application-code: 465ms)
+ GET /login 200 in 572ms (next.js: 33ms, proxy.ts: 447ms, application-code: 92ms)
+ GET /liga/d1cde5a0-f838-4717-9f10-4bc2dba8a1cf 200 in 2.3s (next.js: 1546ms, proxy.ts: 132ms, application-code: 574ms)
+ GET /liga/d1cde5a0-f838-4717-9f10-4bc2dba8a1cf 200 in 744ms (next.js: 27ms, proxy.ts: 158ms, application-code: 559ms)
+ GET /liga/d1cde5a0-f838-4717-9f10-4bc2dba8a1cf 200 in 844ms (next.js: 24ms, proxy.ts: 336ms, application-code: 484ms)
+✓ Compiled in 81ms
+ GET /login 200 in 797ms (next.js: 120ms, proxy.ts: 363ms, application-code: 314ms)
+ GET /liga/d1cde5a0-f838-4717-9f10-4bc2dba8a1cf 200 in 804ms (next.js: 103ms, proxy.ts: 552ms, application-code: 149ms)
+ GET /login 200 in 1094ms (next.js: 165ms, proxy.ts: 557ms, application-code: 373ms)
+ GET /liga/d1cde5a0-f838-4717-9f10-4bc2dba8a1cf 200 in 1106ms (next.js: 364ms, proxy.ts: 561ms, application-code: 181ms)
+ GET / 200 in 910ms (next.js: 43ms, proxy.ts: 257ms, application-code: 610ms)
+[browser] Image with src "https://crests.football-data.org/9396.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/bosnia.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/usa.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/798.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/761.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/8030.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/canada.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/769.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Base UI: A component that acts as a button expected a native <button> because the `nativeButton` prop is true. Rendering a non-<button> removes native button semantics, which can impact forms and accessibility. Use a real <button> in the `render` prop, or set `nativeButton` to `false`.
+    at Button (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__213la-g._.js?121:398:263)
+    at HomePage (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__213la-g._.js?120:722:306) 
+ GET /login 200 in 918ms (next.js: 141ms, proxy.ts: 306ms, application-code: 471ms)
+ GET / 200 in 931ms (next.js: 320ms, proxy.ts: 315ms, application-code: 296ms)
+ GET /login 200 in 321ms (next.js: 8ms, proxy.ts: 10ms, application-code: 302ms)
+ GET /onboarding 200 in 361ms (next.js: 48ms, proxy.ts: 260ms, application-code: 53ms)
+ GET / 200 in 941ms (next.js: 9ms, proxy.ts: 242ms, application-code: 689ms)
+[browser] Base UI: A component that acts as a button expected a native <button> because the `nativeButton` prop is true. Rendering a non-<button> removes native button semantics, which can impact forms and accessibility. Use a real <button> in the `render` prop, or set `nativeButton` to `false`.
+    at Button (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__213la-g._.js?50:398:263)
+    at HomePage (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__213la-g._.js?49:722:306) 
+[browser] Image with src "https://crests.football-data.org/769.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/761.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/usa.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/bosnia.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/8030.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/canada.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/798.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/9396.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+ GET /liga 200 in 1341ms (next.js: 69ms, proxy.ts: 293ms, application-code: 980ms)
+ POST /liga 200 in 19.0s (next.js: 3ms, proxy.ts: 11.4s, application-code: 7.5s)
+  └─ ƒ joinPool({}) in 5997ms src/app/(app)/liga/actions.ts
+ GET /liga 200 in 3.1s (next.js: 26ms, proxy.ts: 2.6s, application-code: 532ms)
+ GET / 200 in 1335ms (next.js: 29ms, proxy.ts: 239ms, application-code: 1067ms)
+ GET /special-bets 200 in 1418ms (next.js: 258ms, proxy.ts: 397ms, application-code: 763ms)
+ GET / 200 in 940ms (next.js: 9ms, proxy.ts: 168ms, application-code: 763ms)
+ GET /gruppespill 200 in 1393ms (next.js: 35ms, proxy.ts: 358ms, application-code: 1000ms)
+[browser] Image with src "https://crests.football-data.org/814.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/morocco.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/haiti.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/764.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/779.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/803.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+✓ Compiled in 235ms
+ GET /sluttspill 200 in 1389ms (next.js: 869ms, proxy.ts: 472ms, application-code: 48ms)
+ GET / 200 in 775ms (next.js: 5ms, proxy.ts: 128ms, application-code: 643ms)
+ GET /gruppespill 200 in 838ms (next.js: 8ms, proxy.ts: 165ms, application-code: 665ms)
+ GET / 200 in 713ms (next.js: 4ms, proxy.ts: 173ms, application-code: 535ms)
+ GET /gruppespill 200 in 657ms (next.js: 3ms, proxy.ts: 242ms, application-code: 412ms)
+ GET / 200 in 1454ms (next.js: 7ms, proxy.ts: 441ms, application-code: 1006ms)
+✓ Compiled in 40ms
+ GET /login 200 in 759ms (next.js: 45ms, proxy.ts: 335ms, application-code: 380ms)
+ GET /login 200 in 385ms (next.js: 10ms, proxy.ts: 343ms, application-code: 33ms)
+ GET / 200 in 801ms (next.js: 157ms, proxy.ts: 414ms, application-code: 230ms)
+ GET / 200 in 804ms (next.js: 120ms, proxy.ts: 415ms, application-code: 269ms)
+ GET / 200 in 491ms (next.js: 15ms, proxy.ts: 156ms, application-code: 321ms)
+ GET / 200 in 494ms (next.js: 13ms, proxy.ts: 320ms, application-code: 162ms)
+✓ Compiled in 124ms
+ GET /login 200 in 1453ms (next.js: 421ms, proxy.ts: 500ms, application-code: 532ms)
+ GET / 200 in 1463ms (next.js: 289ms, proxy.ts: 499ms, application-code: 675ms)
+ GET / 200 in 1469ms (next.js: 140ms, proxy.ts: 1131ms, application-code: 197ms)
+ GET /login 200 in 722ms (next.js: 8ms, proxy.ts: 287ms, application-code: 427ms)
+ GET /login 200 in 728ms (next.js: 169ms, proxy.ts: 206ms, application-code: 352ms)
+ GET / 200 in 1451ms (next.js: 21ms, proxy.ts: 357ms, application-code: 1073ms)
+ GET / 200 in 1237ms (next.js: 35ms, proxy.ts: 320ms, application-code: 882ms)
+ GET /login 200 in 843ms (next.js: 58ms, proxy.ts: 371ms, application-code: 415ms)
+ GET / 200 in 1096ms (next.js: 38ms, proxy.ts: 247ms, application-code: 811ms)
+ GET / 200 in 920ms (next.js: 23ms, proxy.ts: 281ms, application-code: 617ms)
+ GET / 200 in 658ms (next.js: 75ms, proxy.ts: 219ms, application-code: 364ms)
+ GET / 200 in 455ms (next.js: 12ms, proxy.ts: 253ms, application-code: 190ms)
+✓ Compiled in 43ms
+ GET /login 200 in 678ms (next.js: 42ms, proxy.ts: 360ms, application-code: 275ms)
+ GET /login 200 in 161ms (next.js: 4ms, proxy.ts: 137ms, application-code: 20ms)
+ GET / 200 in 1088ms (next.js: 148ms, proxy.ts: 362ms, application-code: 579ms)
+ GET / 200 in 505ms (next.js: 5ms, proxy.ts: 433ms, application-code: 68ms)
+ GET / 200 in 1169ms (next.js: 22ms, proxy.ts: 578ms, application-code: 569ms)
+ GET / 200 in 642ms (next.js: 4ms, proxy.ts: 263ms, application-code: 374ms)
+✓ Compiled in 118ms
+ GET /login 200 in 888ms (next.js: 24ms, proxy.ts: 619ms, application-code: 245ms)
+ GET / 200 in 1082ms (next.js: 103ms, proxy.ts: 397ms, application-code: 581ms)
+ GET / 200 in 1199ms (next.js: 47ms, proxy.ts: 659ms, application-code: 493ms)
+ GET /login 200 in 613ms (next.js: 39ms, proxy.ts: 250ms, application-code: 324ms)
+ GET / 200 in 747ms (next.js: 7ms, proxy.ts: 150ms, application-code: 590ms)
+ GET / 200 in 808ms (next.js: 17ms, proxy.ts: 139ms, application-code: 652ms)
+ GET /login 200 in 485ms (next.js: 89ms, proxy.ts: 208ms, application-code: 188ms)
+ GET / 200 in 757ms (next.js: 11ms, proxy.ts: 172ms, application-code: 574ms)
+ GET / 200 in 740ms (next.js: 10ms, proxy.ts: 263ms, application-code: 467ms)
+ GET / 200 in 632ms (next.js: 81ms, proxy.ts: 155ms, application-code: 396ms)
+ GET / 200 in 631ms (next.js: 13ms, proxy.ts: 341ms, application-code: 278ms)
+ GET / 200 in 584ms (next.js: 67ms, proxy.ts: 299ms, application-code: 218ms)
+ GET / 200 in 632ms (next.js: 14ms, proxy.ts: 537ms, application-code: 82ms)
+ GET /login 200 in 143ms (next.js: 3ms, proxy.ts: 115ms, application-code: 25ms)
+ GET /login 200 in 144ms (next.js: 2ms, proxy.ts: 129ms, application-code: 14ms)
+✓ Compiled in 147ms
+⨯ ReferenceError: cn is not defined
+    at <unknown> (src\app\(app)\page.tsx:216:28)
+    at Array.map (<anonymous>)
+    at StandingsCard (src\app\(app)\page.tsx:213:41)
+  214 |               <li
+  215 |                 key={r.userId}
+> 216 |                 className={cn(
+      |                            ^
+  217 |                   "flex items-center gap-3 rounded-md px-2 py-1.5 text-sm",
+  218 |                   r.userId === meId && "bg-primary/5",
+  219 |                 )} {
+  digest: '401372038'
+}
+⨯ ReferenceError: cn is not defined
+    at <unknown> (src\app\(app)\page.tsx:216:28)
+    at Array.map (<anonymous>)
+    at StandingsCard (src\app\(app)\page.tsx:213:41)
+  214 |               <li
+  215 |                 key={r.userId}
+> 216 |                 className={cn(
+      |                            ^
+  217 |                   "flex items-center gap-3 rounded-md px-2 py-1.5 text-sm",
+  218 |                   r.userId === meId && "bg-primary/5",
+  219 |                 )} {
+  digest: '401372038'
+}
+⨯ ReferenceError: cn is not defined
+    at <unknown> (src\app\(app)\page.tsx:216:28)
+    at Array.map (<anonymous>)
+    at StandingsCard (src\app\(app)\page.tsx:213:41)
+  214 |               <li
+  215 |                 key={r.userId}
+> 216 |                 className={cn(
+      |                            ^
+  217 |                   "flex items-center gap-3 rounded-md px-2 py-1.5 text-sm",
+  218 |                   r.userId === meId && "bg-primary/5",
+  219 |                 )} {
+  digest: '401372038'
+}
+ GET /login 200 in 923ms (next.js: 21ms, proxy.ts: 678ms, application-code: 224ms)
+ GET / 200 in 963ms (next.js: 109ms, proxy.ts: 354ms, application-code: 500ms)
+⨯ ReferenceError: cn is not defined
+    at <unknown> (src\app\(app)\page.tsx:216:28)
+    at Array.map (<anonymous>)
+    at StandingsCard (src\app\(app)\page.tsx:213:41)
+  214 |               <li
+  215 |                 key={r.userId}
+> 216 |                 className={cn(
+      |                            ^
+  217 |                   "flex items-center gap-3 rounded-md px-2 py-1.5 text-sm",
+  218 |                   r.userId === meId && "bg-primary/5",
+  219 |                 )} {
+  digest: '401372038'
+}
+ GET / 200 in 1119ms (next.js: 43ms, proxy.ts: 680ms, application-code: 396ms)
+ GET /login 200 in 382ms (next.js: 6ms, proxy.ts: 151ms, application-code: 225ms)
+⨯ ReferenceError: cn is not defined
+    at <unknown> (src\app\(app)\page.tsx:216:28)
+    at Array.map (<anonymous>)
+    at StandingsCard (src\app\(app)\page.tsx:213:41)
+  214 |               <li
+  215 |                 key={r.userId}
+> 216 |                 className={cn(
+      |                            ^
+  217 |                   "flex items-center gap-3 rounded-md px-2 py-1.5 text-sm",
+  218 |                   r.userId === meId && "bg-primary/5",
+  219 |                 )} {
+  digest: '401372038'
+}
+ GET / 200 in 927ms (next.js: 5ms, proxy.ts: 146ms, application-code: 776ms)
+⨯ ReferenceError: cn is not defined
+    at <unknown> (src\app\(app)\page.tsx:216:28)
+    at Array.map (<anonymous>)
+    at StandingsCard (src\app\(app)\page.tsx:213:41)
+  214 |               <li
+  215 |                 key={r.userId}
+> 216 |                 className={cn(
+      |                            ^
+  217 |                   "flex items-center gap-3 rounded-md px-2 py-1.5 text-sm",
+  218 |                   r.userId === meId && "bg-primary/5",
+  219 |                 )} {
+  digest: '401372038'
+}
+⨯ ReferenceError: cn is not defined
+    at <unknown> (src\app\(app)\page.tsx:216:28)
+    at Array.map (<anonymous>)
+    at StandingsCard (src\app\(app)\page.tsx:213:41)
+  214 |               <li
+  215 |                 key={r.userId}
+> 216 |                 className={cn(
+      |                            ^
+  217 |                   "flex items-center gap-3 rounded-md px-2 py-1.5 text-sm",
+  218 |                   r.userId === meId && "bg-primary/5",
+  219 |                 )} {
+  digest: '401372038'
+}
+⨯ ReferenceError: cn is not defined
+    at <unknown> (src\app\(app)\page.tsx:216:28)
+    at Array.map (<anonymous>)
+    at StandingsCard (src\app\(app)\page.tsx:213:41)
+  214 |               <li
+  215 |                 key={r.userId}
+> 216 |                 className={cn(
+      |                            ^
+  217 |                   "flex items-center gap-3 rounded-md px-2 py-1.5 text-sm",
+  218 |                   r.userId === meId && "bg-primary/5",
+  219 |                 )} {
+  digest: '401372038'
+}
+ GET /login 200 in 3.1s (next.js: 262ms, proxy.ts: 185ms, application-code: 2.6s)
+ GET / 200 in 3.3s (next.js: 10ms, proxy.ts: 163ms, application-code: 3.1s)
+ GET /login 200 in 2.5s (next.js: 5ms, proxy.ts: 2.1s, application-code: 329ms)
+ GET / 200 in 3.2s (next.js: 37ms, proxy.ts: 231ms, application-code: 2.9s)
+ GET / 200 in 2.9s (next.js: 316ms, proxy.ts: 470ms, application-code: 2.2s)
+ GET / 200 in 2.9s (next.js: 31ms, proxy.ts: 471ms, application-code: 2.4s)
+ GET / 200 in 3.2s (next.js: 428ms, proxy.ts: 685ms, application-code: 2.0s)
+[browser] Uncaught ReferenceError: cn is not defined
+    at <anonymous> (src\app\(app)\page.tsx:216:28)
+    at Array.map (<anonymous>:1:18)
+    at StandingsCard (src\app\(app)\page.tsx:213:41)
+  214 |               <li
+  215 |                 key={r.userId}
+> 216 |                 className={cn(
+      |                            ^
+  217 |                   "flex items-center gap-3 rounded-md px-2 py-1.5 text-sm",
+  218 |                   r.userId === meId && "bg-primary/5",
+  219 |                 )}
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+✓ Compiled in 410ms
+ GET /login 200 in 1749ms (next.js: 1212ms, proxy.ts: 284ms, application-code: 252ms)
+ GET /login 200 in 2.4s (next.js: 119ms, proxy.ts: 1391ms, application-code: 841ms)
+ GET /login 200 in 919ms (next.js: 202ms, proxy.ts: 550ms, application-code: 166ms)
+ GET / 200 in 6.0s (next.js: 435ms, proxy.ts: 1854ms, application-code: 3.7s)
+ GET / 200 in 6.0s (next.js: 636ms, proxy.ts: 1828ms, application-code: 3.5s)
+ GET /login 200 in 403ms (next.js: 49ms, proxy.ts: 224ms, application-code: 131ms)
+[browser] Image with src "https://crests.football-data.org/769.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/9396.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/798.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/canada.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/bosnia.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/usa.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/761.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/8030.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Base UI: A component that acts as a button expected a native <button> because the `nativeButton` prop is true. Rendering a non-<button> removes native button semantics, which can impact forms and accessibility. Use a real <button> in the `render` prop, or set `nativeButton` to `false`.
+    at Button (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?85:437:263)
+    at HomePage (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?41:818:306) 
+[browser] Base UI: A component that acts as a button expected a native <button> because the `nativeButton` prop is true. Rendering a non-<button> removes native button semantics, which can impact forms and accessibility. Use a real <button> in the `render` prop, or set `nativeButton` to `false`.
+    at Button (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?85:437:263)
+    at StandingsCard (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?49:1052:285)
+    at HomePage (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?42:866:272) 
+[browser] Image with src "https://crests.football-data.org/769.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/9396.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/798.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/canada.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/bosnia.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/usa.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/761.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/8030.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Base UI: A component that acts as a button expected a native <button> because the `nativeButton` prop is true. Rendering a non-<button> removes native button semantics, which can impact forms and accessibility. Use a real <button> in the `render` prop, or set `nativeButton` to `false`.
+    at Button (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?95:437:263)
+    at HomePage (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?41:818:306) 
+[browser] Base UI: A component that acts as a button expected a native <button> because the `nativeButton` prop is true. Rendering a non-<button> removes native button semantics, which can impact forms and accessibility. Use a real <button> in the `render` prop, or set `nativeButton` to `false`.
+    at Button (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?95:437:263)
+    at StandingsCard (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?49:1052:285)
+    at HomePage (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?42:866:272) 
+✓ Compiled in 55ms
+ GET /login 200 in 768ms (next.js: 16ms, proxy.ts: 731ms, application-code: 21ms)
+ GET / 200 in 767ms (next.js: 79ms, proxy.ts: 565ms, application-code: 123ms)
+ GET /login 200 in 197ms (next.js: 4ms, proxy.ts: 164ms, application-code: 30ms)
+ GET / 200 in 236ms (next.js: 3ms, proxy.ts: 116ms, application-code: 116ms)
+  Reload env: .env.local
+ GET /login 200 in 1556ms (next.js: 13ms, proxy.ts: 1518ms, application-code: 26ms)
+ GET / 200 in 1562ms (next.js: 84ms, proxy.ts: 1346ms, application-code: 132ms)
+✓ Compiled in 63ms
+ GET /login 200 in 600ms (next.js: 53ms, proxy.ts: 312ms, application-code: 235ms)
+ GET /login 200 in 255ms (next.js: 14ms, proxy.ts: 197ms, application-code: 44ms)
+ GET / 200 in 651ms (next.js: 87ms, proxy.ts: 393ms, application-code: 171ms)
+ GET /login 200 in 167ms (next.js: 6ms, proxy.ts: 149ms, application-code: 13ms)
+ GET / 200 in 223ms (next.js: 5ms, proxy.ts: 141ms, application-code: 77ms)
+ GET / 200 in 189ms (next.js: 2ms, proxy.ts: 117ms, application-code: 70ms)
+⨯ ./src/app/(app)/sluttspill/page.tsx:3:1
+Module not found: Can't resolve '@/components/knockout-editor'
+  [90m1 |[0m [36mimport[0m { createClient } [36mfrom[0m [32m"@/lib/supabase/server"[0m;
+  [90m2 |[0m [36mimport[0m { loadMatches, loadUserPicks } [36mfrom[0m [32m"@/lib/queries"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mKnockoutEditor[0m } [36mfrom[0m [32m"@/components/knockout-editor"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m
+  [90m5 |[0m [36mexport[0m [36mdefault[0m [36masync[0m [36mfunction[0m [33mSluttspillPage[0m() {
+  [90m6 |[0m   [36mconst[0m supabase = [36mawait[0m createClient();
+
+Import map: aliased to relative './src/components/knockout-editor' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(app)/sluttspill/page.tsx:3:1
+Module not found: Can't resolve '@/components/knockout-editor'
+  [90m1 |[0m [36mimport[0m { createClient } [36mfrom[0m [32m"@/lib/supabase/server"[0m;
+  [90m2 |[0m [36mimport[0m { loadMatches, loadUserPicks } [36mfrom[0m [32m"@/lib/queries"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mKnockoutEditor[0m } [36mfrom[0m [32m"@/components/knockout-editor"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m
+  [90m5 |[0m [36mexport[0m [36mdefault[0m [36masync[0m [36mfunction[0m [33mSluttspillPage[0m() {
+  [90m6 |[0m   [36mconst[0m supabase = [36mawait[0m createClient();
+
+Import map: aliased to relative './src/components/knockout-editor' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ GET / 500 in 381ms (next.js: 7ms, proxy.ts: 362ms, application-code: 11ms)
+ GET /login 500 in 396ms (next.js: 4ms, proxy.ts: 382ms, application-code: 9ms)
+ GET / 500 in 142ms (next.js: 6ms, proxy.ts: 129ms, application-code: 6ms)
+ GET /login 500 in 154ms (next.js: 5ms, proxy.ts: 142ms, application-code: 6ms)
+ GET / 500 in 258ms (next.js: 4ms, proxy.ts: 247ms, application-code: 6ms)
+ GET /login 500 in 293ms (next.js: 5ms, proxy.ts: 275ms, application-code: 12ms)
+[browser] Uncaught Error: ./src/app/(app)/sluttspill/page.tsx:3:1
+Module not found: Can't resolve '@/components/knockout-editor'
+  1 | import { createClient } from "@/lib/supabase/server";
+  2 | import { loadMatches, loadUserPicks } from "@/lib/queries";
+> 3 | import { KnockoutEditor } from "@/components/knockout-editor";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default async function SluttspillPage() {
+  6 |   const supabase = await createClient();
+
+Import map: aliased to relative './src/components/knockout-editor' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./src/app/(app)/sluttspill/page.tsx:3:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (Error: (./src/app/(app)/sluttspill/page.tsx:3:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+[browser] Uncaught Error: ./src/app/(app)/sluttspill/page.tsx:3:1
+Module not found: Can't resolve '@/components/knockout-editor'
+  1 | import { createClient } from "@/lib/supabase/server";
+  2 | import { loadMatches, loadUserPicks } from "@/lib/queries";
+> 3 | import { KnockoutEditor } from "@/components/knockout-editor";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | export default async function SluttspillPage() {
+  6 |   const supabase = await createClient();
+
+Import map: aliased to relative './src/components/knockout-editor' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./src/app/(app)/sluttspill/page.tsx:3:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (Error: (./src/app/(app)/sluttspill/page.tsx:3:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+✓ Compiled in 330ms
+[TypeError: fetch failed] {
+  [cause]: Error [ConnectTimeoutError]: Connect Timeout Error (attempted addresses: 104.18.38.10:443, 172.64.149.246:443, timeout: 10000ms)
+      at ignore-listed frames {
+    code: 'UND_ERR_CONNECT_TIMEOUT'
+  }
+}
+[TypeError: fetch failed] {
+  [cause]: Error [ConnectTimeoutError]: Connect Timeout Error (attempted addresses: 104.18.38.10:443, 172.64.149.246:443, timeout: 10000ms)
+      at ignore-listed frames {
+    code: 'UND_ERR_CONNECT_TIMEOUT'
+  }
+}
+[TypeError: fetch failed] {
+  [cause]: Error [ConnectTimeoutError]: Connect Timeout Error (attempted addresses: 104.18.38.10:443, 172.64.149.246:443, timeout: 10000ms)
+      at ignore-listed frames {
+    code: 'UND_ERR_CONNECT_TIMEOUT'
+  }
+}
+[TypeError: fetch failed] {
+  [cause]: Error [ConnectTimeoutError]: Connect Timeout Error (attempted addresses: 104.18.38.10:443, 172.64.149.246:443, timeout: 10000ms)
+      at ignore-listed frames {
+    code: 'UND_ERR_CONNECT_TIMEOUT'
+  }
+}
+[TypeError: fetch failed] {
+  [cause]: Error [ConnectTimeoutError]: Connect Timeout Error (attempted addresses: 104.18.38.10:443, 172.64.149.246:443, timeout: 10000ms)
+      at ignore-listed frames {
+    code: 'UND_ERR_CONNECT_TIMEOUT'
+  }
+}
+[TypeError: fetch failed] {
+  [cause]: Error [ConnectTimeoutError]: Connect Timeout Error (attempted addresses: 104.18.38.10:443, 172.64.149.246:443, timeout: 10000ms)
+      at ignore-listed frames {
+    code: 'UND_ERR_CONNECT_TIMEOUT'
+  }
+}
+[TypeError: fetch failed] {
+  [cause]: Error [ConnectTimeoutError]: Connect Timeout Error (attempted addresses: 104.18.38.10:443, 172.64.149.246:443, timeout: 10000ms)
+      at ignore-listed frames {
+    code: 'UND_ERR_CONNECT_TIMEOUT'
+  }
+}
+[TypeError: fetch failed] {
+  [cause]: Error [ConnectTimeoutError]: Connect Timeout Error (attempted addresses: 104.18.38.10:443, 172.64.149.246:443, timeout: 10000ms)
+      at ignore-listed frames {
+    code: 'UND_ERR_CONNECT_TIMEOUT'
+  }
+}
+ GET /login 200 in 10.9s (next.js: 59ms, proxy.ts: 10.7s, application-code: 128ms)
+[TypeError: fetch failed] {
+  [cause]: Error [ConnectTimeoutError]: Connect Timeout Error (attempted addresses: 104.18.38.10:443, 172.64.149.246:443, timeout: 10000ms)
+      at ignore-listed frames {
+    code: 'UND_ERR_CONNECT_TIMEOUT'
+  }
+}
+ GET /login 200 in 10.7s (next.js: 2ms, proxy.ts: 10.7s, application-code: 26ms)
+  Reload env: .env.local
+ GET /login 200 in 1079ms (next.js: 172ms, proxy.ts: 783ms, application-code: 123ms)
+ GET /login 200 in 294ms (next.js: 8ms, proxy.ts: 229ms, application-code: 57ms)
+✓ Compiled in 112ms
+ GET /login 200 in 2.9s (next.js: 146ms, proxy.ts: 2.7s, application-code: 91ms)
+ GET /login 200 in 2.8s (next.js: 8ms, proxy.ts: 2.8s, application-code: 69ms)
+ GET /login 200 in 8.8s (next.js: 5ms, proxy.ts: 8.7s, application-code: 45ms)
+ GET /login 200 in 1025ms (next.js: 4ms, proxy.ts: 988ms, application-code: 33ms)
+ GET /login 200 in 803ms (next.js: 4ms, proxy.ts: 762ms, application-code: 38ms)
+ GET /login 200 in 539ms (next.js: 5ms, proxy.ts: 501ms, application-code: 33ms)
+ GET /login 200 in 914ms (next.js: 9ms, proxy.ts: 856ms, application-code: 50ms)
+ GET /login 200 in 704ms (next.js: 5ms, proxy.ts: 668ms, application-code: 32ms)
+ GET /login 200 in 238ms (next.js: 6ms, proxy.ts: 203ms, application-code: 30ms)
+ GET /login 200 in 171ms (next.js: 4ms, proxy.ts: 135ms, application-code: 32ms)
+ GET /login 200 in 211ms (next.js: 4ms, proxy.ts: 177ms, application-code: 29ms)
+ GET /login 200 in 203ms (next.js: 8ms, proxy.ts: 137ms, application-code: 57ms)
+ GET /login 200 in 436ms (next.js: 6ms, proxy.ts: 379ms, application-code: 50ms)
+ GET /login 200 in 507ms (next.js: 8ms, proxy.ts: 450ms, application-code: 49ms)
+✓ Compiled in 325ms
+ GET /login 200 in 831ms (next.js: 205ms, proxy.ts: 521ms, application-code: 106ms)
+ GET /login 200 in 228ms (next.js: 8ms, proxy.ts: 144ms, application-code: 76ms)
+ GET /login 200 in 255ms (next.js: 10ms, proxy.ts: 173ms, application-code: 71ms)
+ GET /login 200 in 221ms (next.js: 9ms, proxy.ts: 145ms, application-code: 67ms)
+ GET /login 200 in 224ms (next.js: 10ms, proxy.ts: 142ms, application-code: 72ms)
+ GET /login 200 in 191ms (next.js: 21ms, proxy.ts: 115ms, application-code: 56ms)
+ GET /login 200 in 208ms (next.js: 9ms, proxy.ts: 134ms, application-code: 64ms)
+ GET /login 200 in 221ms (next.js: 8ms, proxy.ts: 146ms, application-code: 67ms)
+ GET /login 200 in 214ms (next.js: 8ms, proxy.ts: 147ms, application-code: 59ms)
+ GET /login 200 in 248ms (next.js: 9ms, proxy.ts: 173ms, application-code: 66ms)
+ GET /login 200 in 209ms (next.js: 9ms, proxy.ts: 134ms, application-code: 66ms)
+ GET /login 200 in 305ms (next.js: 9ms, proxy.ts: 214ms, application-code: 82ms)
+ GET /login 200 in 253ms (next.js: 6ms, proxy.ts: 186ms, application-code: 62ms)
+ GET /login 200 in 263ms (next.js: 11ms, proxy.ts: 185ms, application-code: 67ms)
+ GET /login 200 in 234ms (next.js: 10ms, proxy.ts: 154ms, application-code: 70ms)
+ GET /login 200 in 206ms (next.js: 6ms, proxy.ts: 137ms, application-code: 62ms)
+ GET /login 200 in 168ms (next.js: 3ms, proxy.ts: 135ms, application-code: 30ms)
+ GET /login 200 in 152ms (next.js: 4ms, proxy.ts: 123ms, application-code: 26ms)
+ GET /login 200 in 153ms (next.js: 3ms, proxy.ts: 126ms, application-code: 23ms)
+ GET /login 200 in 149ms (next.js: 5ms, proxy.ts: 119ms, application-code: 26ms)
+ GET /login 200 in 138ms (next.js: 3ms, proxy.ts: 114ms, application-code: 21ms)
+ GET /login 200 in 180ms (next.js: 3ms, proxy.ts: 151ms, application-code: 26ms)
+ GET /login 200 in 164ms (next.js: 4ms, proxy.ts: 137ms, application-code: 23ms)
+ GET /login 200 in 217ms (next.js: 7ms, proxy.ts: 149ms, application-code: 60ms)
+ GET /login 200 in 255ms (next.js: 7ms, proxy.ts: 200ms, application-code: 48ms)
+ GET /login 200 in 207ms (next.js: 4ms, proxy.ts: 166ms, application-code: 37ms)
+  Reload env: .env.local
+ GET /login 200 in 876ms (next.js: 155ms, proxy.ts: 645ms, application-code: 77ms)
+ GET /login 200 in 183ms (next.js: 8ms, proxy.ts: 129ms, application-code: 47ms)
+ GET / 200 in 3.1s (next.js: 405ms, proxy.ts: 503ms, application-code: 2.2s)
+[browser] Base UI: A component that acts as a button expected a native <button> because the `nativeButton` prop is true. Rendering a non-<button> removes native button semantics, which can impact forms and accessibility. Use a real <button> in the `render` prop, or set `nativeButton` to `false`.
+    at Button (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?58:437:263)
+    at HomePage (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?57:840:306) 
+[browser] Base UI: A component that acts as a button expected a native <button> because the `nativeButton` prop is true. Rendering a non-<button> removes native button semantics, which can impact forms and accessibility. Use a real <button> in the `render` prop, or set `nativeButton` to `false`.
+    at Button (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?58:437:263)
+    at StandingsCard (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?69:1074:285)
+    at HomePage (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?62:888:272) 
+[browser] Image with src "https://crests.football-data.org/9396.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/canada.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/bosnia.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/761.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/8030.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/usa.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/798.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/769.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Uncaught Error: Base UI: MenuGroupContext is missing. Menu group parts must be used within <Menu.Group> or <Menu.RadioGroup>.
+    at DropdownMenuLabel (src/components/ui/dropdown-menu.tsx:64:5)
+    at AppShell (src/components/app-shell.tsx:121:17)
+    at AppLayout (src\app\(app)\layout.tsx:24:5)
+  62 | }) {
+  63 |   return (
+> 64 |     <MenuPrimitive.GroupLabel
+     |     ^
+  65 |       data-slot="dropdown-menu-label"
+  66 |       data-inset={inset}
+  67 |       className={cn(
+ GET / 200 in 3.3s (next.js: 11ms, proxy.ts: 1244ms, application-code: 2.1s)
+[browser] Image with src "https://crests.football-data.org/769.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/9396.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/798.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/canada.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/bosnia.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/usa.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/761.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/8030.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Base UI: A component that acts as a button expected a native <button> because the `nativeButton` prop is true. Rendering a non-<button> removes native button semantics, which can impact forms and accessibility. Use a real <button> in the `render` prop, or set `nativeButton` to `false`.
+    at Button (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?94:437:263)
+    at HomePage (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?43:840:306) 
+[browser] Base UI: A component that acts as a button expected a native <button> because the `nativeButton` prop is true. Rendering a non-<button> removes native button semantics, which can impact forms and accessibility. Use a real <button> in the `render` prop, or set `nativeButton` to `false`.
+    at Button (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?94:437:263)
+    at StandingsCard (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?51:1074:285)
+    at HomePage (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?44:888:272) 
+ GET /admin 200 in 4.2s (next.js: 1871ms, proxy.ts: 471ms, application-code: 1834ms)
+ GET / 200 in 8.8s (next.js: 10ms, proxy.ts: 333ms, application-code: 8.5s)
+[browser] Image with src "https://crests.football-data.org/769.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/9396.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/798.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/canada.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/bosnia.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/usa.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/761.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/8030.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Base UI: A component that acts as a button expected a native <button> because the `nativeButton` prop is true. Rendering a non-<button> removes native button semantics, which can impact forms and accessibility. Use a real <button> in the `render` prop, or set `nativeButton` to `false`.
+    at Button (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?98:437:263)
+    at HomePage (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?47:840:306) 
+[browser] Base UI: A component that acts as a button expected a native <button> because the `nativeButton` prop is true. Rendering a non-<button> removes native button semantics, which can impact forms and accessibility. Use a real <button> in the `render` prop, or set `nativeButton` to `false`.
+    at Button (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?98:437:263)
+    at StandingsCard (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?55:1074:285)
+    at HomePage (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?48:888:272) 
+ POST /admin 200 in 6.1s (next.js: 11ms, proxy.ts: 2.9s, application-code: 3.2s)
+  └─ ƒ setSpecialResult("winner", "Spain") in 1175ms src/app/(app)/admin/actions.ts
+ POST /admin 200 in 10.0s (next.js: 10ms, proxy.ts: 1027ms, application-code: 9.0s)
+  └─ ƒ setSpecialResult("winner", "Spain") in 1047ms src/app/(app)/admin/actions.ts
+ GET /sluttspill 200 in 5.6s (next.js: 321ms, proxy.ts: 4.5s, application-code: 826ms)
+ GET /special-bets 200 in 1211ms (next.js: 298ms, proxy.ts: 244ms, application-code: 669ms)
+ GET /gruppespill 200 in 993ms (next.js: 281ms, proxy.ts: 123ms, application-code: 589ms)
+ GET / 200 in 2.6s (next.js: 10ms, proxy.ts: 1276ms, application-code: 1287ms)
+ GET / 200 in 1492ms (next.js: 8ms, proxy.ts: 434ms, application-code: 1050ms)
+[browser] ./src/app/(app)/page.tsx:49:58
+Expected a semicolon
+  47 |   const today = matches.filter((m) => isToday(m.utc_date));
+  48 |
+> 49 |   const firstName = (profileRes.data?.display_name ?? "")];
+     |                                                          ^
+  50 |   const totalPoints = scoreRes.data?.total_points ?? 0;
+  51 |
+  52 |   return (
+
+Parsing ecmascript source code failed 
+⨯ ./src/app/(app)/page.tsx:49:58
+Expected a semicolon
+  [90m47 |[0m   [36mconst[0m today = matches.filter((m) => isToday(m.utc_date));
+  [90m48 |[0m
+[31m[1m>[0m [90m49 |[0m   [36mconst[0m firstName = (profileRes.data?.display_name ?? [32m""[0m)];
+  [90m   |[0m                                                          [31m[1m^[0m
+  [90m50 |[0m   [36mconst[0m totalPoints = scoreRes.data?.total_points ?? [35m0[0m;
+  [90m51 |[0m
+  [90m52 |[0m   [36mreturn[0m (
+
+Parsing ecmascript source code failed
+
+
+ GET /admin 500 in 3.2s (next.js: 45ms, proxy.ts: 3.2s, application-code: 30ms)
+ GET / 500 in 3.2s (next.js: 58ms, proxy.ts: 3.2s, application-code: 12ms)
+ GET /login 500 in 3.2s (next.js: 43ms, proxy.ts: 3.2s, application-code: 18ms)
+✓ Compiled in 55ms
+[browser] ./src/app/(app)/page.tsx:49:58
+Expected a semicolon
+  47 |   const today = matches.filter((m) => isToday(m.utc_date));
+  48 |
+> 49 |   const firstName = (profileRes.data?.display_name ?? "")];
+     |                                                          ^
+  50 |   const totalPoints = scoreRes.data?.total_points ?? 0;
+  51 |
+  52 |   return (
+
+Parsing ecmascript source code failed 
+[browser] ./src/app/(app)/page.tsx:49:58
+Expected a semicolon
+  47 |   const today = matches.filter((m) => isToday(m.utc_date));
+  48 |
+> 49 |   const firstName = (profileRes.data?.display_name ?? "")];
+     |                                                          ^
+  50 |   const totalPoints = scoreRes.data?.total_points ?? 0;
+  51 |
+  52 |   return (
+
+Parsing ecmascript source code failed 
+[browser] ./src/app/(app)/page.tsx:49:58
+Expected a semicolon
+  47 |   const today = matches.filter((m) => isToday(m.utc_date));
+  48 |
+> 49 |   const firstName = (profileRes.data?.display_name ?? "")];
+     |                                                          ^
+  50 |   const totalPoints = scoreRes.data?.total_points ?? 0;
+  51 |
+  52 |   return (
+
+Parsing ecmascript source code failed 
+ GET /login 200 in 1690ms (next.js: 62ms, proxy.ts: 1011ms, application-code: 618ms)
+ GET /admin 200 in 4.2s (next.js: 13ms, proxy.ts: 3.3s, application-code: 852ms)
+ GET / 200 in 4.2s (next.js: 19ms, proxy.ts: 3.9s, application-code: 323ms)
+ GET /admin 200 in 936ms (next.js: 8ms, proxy.ts: 776ms, application-code: 152ms)
+ GET / 200 in 901ms (next.js: 8ms, proxy.ts: 692ms, application-code: 201ms)
+ GET /admin 200 in 5.6s (next.js: 81ms, proxy.ts: 1445ms, application-code: 4.1s)
+ GET / 200 in 7.2s (next.js: 272ms, proxy.ts: 445ms, application-code: 6.5s)
+[browser] Image with src "https://crests.football-data.org/769.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/9396.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/798.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/canada.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/bosnia.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/usa.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/761.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/8030.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Base UI: A component that acts as a button expected a native <button> because the `nativeButton` prop is true. Rendering a non-<button> removes native button semantics, which can impact forms and accessibility. Use a real <button> in the `render` prop, or set `nativeButton` to `false`.
+    at Button (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?98:437:263)
+    at HomePage (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?47:840:306) 
+[browser] Base UI: A component that acts as a button expected a native <button> because the `nativeButton` prop is true. Rendering a non-<button> removes native button semantics, which can impact forms and accessibility. Use a real <button> in the `render` prop, or set `nativeButton` to `false`.
+    at Button (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?98:437:263)
+    at StandingsCard (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?55:1074:285)
+    at HomePage (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?48:888:272) 
+ GET / 200 in 4.9s (next.js: 9ms, proxy.ts: 1592ms, application-code: 3.3s)
+[browser] Base UI: A component that acts as a button expected a native <button> because the `nativeButton` prop is true. Rendering a non-<button> removes native button semantics, which can impact forms and accessibility. Use a real <button> in the `render` prop, or set `nativeButton` to `false`.
+    at Button (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?65:437:263)
+    at HomePage (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?64:840:306) 
+[browser] Base UI: A component that acts as a button expected a native <button> because the `nativeButton` prop is true. Rendering a non-<button> removes native button semantics, which can impact forms and accessibility. Use a real <button> in the `render` prop, or set `nativeButton` to `false`.
+    at Button (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?65:437:263)
+    at StandingsCard (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?76:1074:285)
+    at HomePage (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?69:888:272) 
+[browser] Image with src "https://crests.football-data.org/9396.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/canada.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/bosnia.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/798.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/769.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/usa.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/761.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/8030.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
