@@ -49,6 +49,36 @@ function TeamInsightBlock({ team, insight }: { team: Team | null; insight?: Team
       ) : (
         <p className="text-xs text-muted-foreground/70">Ingen VM-kamper spilt ennå</p>
       )}
+
+      {insight?.detail && (
+        <div className="space-y-1 border-t pt-2">
+          <div className="grid grid-cols-2 gap-x-3 gap-y-1 text-xs">
+            <Stat label="Mål/kamp" value={insight.detail.goalsPerMatch?.toFixed(1)} />
+            <Stat label="Baklengs/kamp" value={insight.detail.concededPerMatch?.toFixed(1)} />
+            <Stat label="Besittelse" value={pct(insight.detail.possession)} />
+            <Stat label="Skudd/kamp" value={insight.detail.shotsPerMatch?.toFixed(1)} />
+            <Stat label="Pasning" value={pct(insight.detail.passPct)} />
+            <Stat label="Rating" value={insight.detail.rating?.toFixed(2)} />
+          </div>
+          <p className="text-[10px] text-muted-foreground/70">
+            {insight.detail.source} · {insight.detail.matches} kamper
+          </p>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function pct(v: number | null | undefined): string | undefined {
+  return v == null ? undefined : `${Math.round(v)}%`;
+}
+
+function Stat({ label, value }: { label: string; value: string | undefined }) {
+  if (value == null) return null;
+  return (
+    <div className="flex items-baseline justify-between gap-1">
+      <span className="text-muted-foreground">{label}</span>
+      <span className="font-medium tabular-nums">{value}</span>
     </div>
   );
 }

@@ -7,11 +7,24 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
 import { fetchCandidates, POLYMARKET_SLUG } from "@/lib/polymarket";
 
+export interface TeamDetail {
+  source: string;
+  matches: number;
+  goalsPerMatch: number | null;
+  concededPerMatch: number | null;
+  possession: number | null;
+  shotsPerMatch: number | null;
+  passPct: number | null;
+  rating: number | null;
+  cleanSheets: number | null;
+}
+
 export interface TeamInsight {
   titleProb: number | null;
   squadSize: number;
   avgAge: number | null;
   form: { w: number; d: number; l: number; gf: number; ga: number; recent: ("W" | "D" | "L")[] };
+  detail: TeamDetail | null;
 }
 
 function normalize(name: string): string {
@@ -31,15 +44,17 @@ const TEAM_ALIAS: Record<string, string> = {
 };
 
 export async function loadTeamInsights(sb: SupabaseClient): Promise<Record<number, TeamInsight>> {
-  const [{ data: teams }, { data: players }, { data: matches }, winnerCands] = await Promise.all([
-    sb.from("teams").select("id, name"),
-    sb.from("players").select("team_id, date_of_birth"),
-    sb
-      .from("matches")
-      .select("home_team_id, away_team_id, home_score, away_score, status, utc_date")
-      .eq("status", "FINISHED"),
-    fetchCandidates(POLYMARKET_SLUG.winner),
-  ]);
+  const [{ data: teams }, { data: players }, { data: matches }, { data: teamStats }, winnerCands] =
+    await Promise.all([
+      sb.from("teams").select("id, name"),
+      sb.from("players").select("team_id, date_of_birth"),
+      sb
+        .from("matches")
+        .select("home_team_id, away_team_id, home_score, away_score, status, utc_date")
+        .eq("status", "FINISHED"),
+      sb.from("team_stats").select("team_id, source_tournament, matches, stats"),
+      fetchCandidates(POLYMARKET_SLUG.winner),
+    ]);
 
   const out: Record<number, TeamInsight> = {};
   for (const t of teams ?? []) {
@@ -48,6 +63,26 @@ export async function loadTeamInsights(sb: SupabaseClient): Promise<Record<numbe
       squadSize: 0,
       avgAge: null,
       form: { w: 0, d: 0, l: 0, gf: 0, ga: 0, recent: [] },
+      detail: null,
+    };
+  }
+
+  // Sofascore-enriched detail (per-match where useful).
+  for (const ts of teamStats ?? []) {
+    if (!out[ts.team_id]) continue;
+    const s = (ts.stats ?? {}) as Record<string, number>;
+    const m = ts.matches ?? s.matches ?? 0;
+    const per = (v: number | undefined) => (m && v != null ? v / m : null);
+    out[ts.team_id].detail = {
+      source: ts.source_tournament ?? "",
+      matches: m,
+      goalsPerMatch: per(s.goalsScored),
+      concededPerMatch: per(s.goalsConceded),
+      possession: s.averageBallPossession ?? null,
+      shotsPerMatch: per(s.shots),
+      passPct: s.accuratePassesPercentage ?? null,
+      rating: s.avgRating ?? null,
+      cleanSheets: s.cleanSheets ?? null,
     };
   }
 

@@ -150,9 +150,9 @@ export function GroupStageEditor({
                             )}
                           </span>
                           <span className="flex min-w-0 flex-1 items-center gap-1 truncate">
-                            <span className="truncate">{m.home?.tla ?? m.home?.name ?? "TBD"}</span>
+                            <span className="truncate">{m.home?.name ?? m.home?.tla ?? "TBD"}</span>
                             <span className="text-muted-foreground">–</span>
-                            <span className="truncate">{m.away?.tla ?? m.away?.name ?? "TBD"}</span>
+                            <span className="truncate">{m.away?.name ?? m.away?.tla ?? "TBD"}</span>
                           </span>
                           {picked && (
                             <span className="ml-auto rounded bg-primary/10 px-1 text-xs font-semibold text-primary">

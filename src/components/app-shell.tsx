@@ -72,7 +72,7 @@ export function AppShell({
         <div className="mx-auto flex h-14 w-full max-w-7xl items-center gap-2 px-4">
           <Link href="/" className="mr-2 flex items-center gap-2 font-semibold tracking-tight">
             <span className="grid size-7 place-items-center rounded-md bg-primary text-primary-foreground">
-              <Trophy className="size-4" />
+              <img className="size-5  brightness-0 invert" src="/trophy.svg" alt="Poeng" />
             </span>
             <span className="hidden sm:inline">VM 2026</span>
           </Link>

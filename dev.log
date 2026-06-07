@@ -2387,3 +2387,113 @@ Parsing ecmascript source code failed
     at StandingsCard (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?127:1074:285)
     at HomePage (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?120:888:272) 
 [browser] Image with src "https://crests.football-data.org/761.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+✓ Compiled in 58ms
+ GET / 200 in 956ms (next.js: 425ms, proxy.ts: 355ms, application-code: 176ms)
+ GET / 200 in 229ms (next.js: 5ms, proxy.ts: 153ms, application-code: 71ms)
+[browser] Uncaught Error: Base UI: MenuGroupContext is missing. Menu group parts must be used within <Menu.Group> or <Menu.RadioGroup>.
+    at DropdownMenuLabel (src/components/ui/dropdown-menu.tsx:64:5)
+    at AppShell (src/components/app-shell.tsx:121:17)
+    at AppLayout (src\app\(app)\layout.tsx:24:5)
+  62 | }) {
+  63 |   return (
+> 64 |     <MenuPrimitive.GroupLabel
+     |     ^
+  65 |       data-slot="dropdown-menu-label"
+  66 |       data-inset={inset}
+  67 |       className={cn(
+ GET /liga 200 in 753ms (next.js: 105ms, proxy.ts: 282ms, application-code: 365ms)
+ GET / 200 in 1803ms (next.js: 9ms, proxy.ts: 139ms, application-code: 1654ms)
+[browser] Image with src "https://crests.football-data.org/769.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/9396.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/798.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/canada.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/bosnia.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/usa.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/761.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/8030.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Base UI: A component that acts as a button expected a native <button> because the `nativeButton` prop is true. Rendering a non-<button> removes native button semantics, which can impact forms and accessibility. Use a real <button> in the `render` prop, or set `nativeButton` to `false`.
+    at Button (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?98:437:263)
+    at HomePage (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?47:840:306) 
+[browser] Base UI: A component that acts as a button expected a native <button> because the `nativeButton` prop is true. Rendering a non-<button> removes native button semantics, which can impact forms and accessibility. Use a real <button> in the `render` prop, or set `nativeButton` to `false`.
+    at Button (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?98:437:263)
+    at StandingsCard (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?55:1074:285)
+    at HomePage (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?48:888:272) 
+✓ Compiled in 62ms
+ GET / 200 in 1149ms (next.js: 358ms, proxy.ts: 376ms, application-code: 414ms)
+ GET / 200 in 485ms (next.js: 9ms, proxy.ts: 262ms, application-code: 214ms)
+ GET /gruppespill 200 in 1008ms (next.js: 32ms, proxy.ts: 155ms, application-code: 821ms)
+✓ Compiled in 40ms
+ GET /gruppespill 200 in 1029ms (next.js: 362ms, proxy.ts: 379ms, application-code: 288ms)
+✓ Compiled in 56ms
+ GET /gruppespill 200 in 823ms (next.js: 297ms, proxy.ts: 239ms, application-code: 287ms)
+✓ Compiled in 49ms
+ GET /gruppespill 200 in 8.7s (next.js: 320ms, proxy.ts: 8.2s, application-code: 248ms)
+✓ Compiled in 52ms
+ GET /gruppespill 200 in 1344ms (next.js: 386ms, proxy.ts: 630ms, application-code: 327ms)
+ GET /gruppespill 200 in 551ms (next.js: 9ms, proxy.ts: 361ms, application-code: 182ms)
+✓ Compiled in 142ms
+ GET /gruppespill 200 in 957ms (next.js: 304ms, proxy.ts: 381ms, application-code: 272ms)
+ GET /gruppespill 200 in 323ms (next.js: 6ms, proxy.ts: 123ms, application-code: 194ms)
+ GET /gruppespill 200 in 376ms (next.js: 11ms, proxy.ts: 137ms, application-code: 227ms)
+ GET /gruppespill 200 in 357ms (next.js: 10ms, proxy.ts: 147ms, application-code: 201ms)
+ GET / 200 in 1940ms (next.js: 136ms, proxy.ts: 694ms, application-code: 1109ms)
+[browser] Base UI: A component that acts as a button expected a native <button> because the `nativeButton` prop is true. Rendering a non-<button> removes native button semantics, which can impact forms and accessibility. Use a real <button> in the `render` prop, or set `nativeButton` to `false`.
+    at Button (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?98:437:263)
+    at HomePage (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?196:840:306) 
+[browser] Base UI: A component that acts as a button expected a native <button> because the `nativeButton` prop is true. Rendering a non-<button> removes native button semantics, which can impact forms and accessibility. Use a real <button> in the `render` prop, or set `nativeButton` to `false`.
+    at Button (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?98:437:263)
+    at StandingsCard (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?55:1074:285)
+    at HomePage (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?197:888:272) 
+✓ Compiled in 64ms
+ GET / 200 in 821ms (next.js: 145ms, proxy.ts: 552ms, application-code: 124ms)
+ GET / 200 in 209ms (next.js: 3ms, proxy.ts: 117ms, application-code: 89ms)
+ GET / 200 in 211ms (next.js: 6ms, proxy.ts: 130ms, application-code: 75ms)
+ GET / 200 in 246ms (next.js: 6ms, proxy.ts: 124ms, application-code: 116ms)
+✓ Compiled in 73ms
+ GET / 200 in 1125ms (next.js: 384ms, proxy.ts: 359ms, application-code: 382ms)
+✓ Compiled in 56ms
+ GET / 200 in 1261ms (next.js: 419ms, proxy.ts: 457ms, application-code: 385ms)
+[browser] Uncaught Error: The `style` prop expects a mapping from style properties to values, not a string. For example, style={{marginRight: spacing + 'em'}} when using JSX.
+    at img (<anonymous>)
+    at AppShell (src/components/app-shell.tsx:75:15)
+    at AppLayout (src\app\(app)\layout.tsx:24:5)
+  73 |           <Link href="/" className="mr-2 flex items-center gap-2 font-semibold tracking-ti...
+  74 |             <span className="grid size-7 place-items-center rounded-md bg-primary text-pri...
+> 75 |               <img className="size-5" src="/trophy.svg" alt="Poeng" style="color:white" />
+     |               ^
+  76 |             </span>
+  77 |             <span className="hidden sm:inline">VM 2026</span>
+  78 |           </Link>
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+✓ Compiled in 49ms
+ GET / 200 in 2.5s (next.js: 146ms, proxy.ts: 360ms, application-code: 2.0s)
+[browser] Image with src "https://crests.football-data.org/769.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/9396.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/798.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/canada.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/bosnia.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/usa.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/761.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/8030.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Base UI: A component that acts as a button expected a native <button> because the `nativeButton` prop is true. Rendering a non-<button> removes native button semantics, which can impact forms and accessibility. Use a real <button> in the `render` prop, or set `nativeButton` to `false`.
+    at Button (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?98:437:263)
+    at HomePage (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?47:839:306) 
+[browser] Base UI: A component that acts as a button expected a native <button> because the `nativeButton` prop is true. Rendering a non-<button> removes native button semantics, which can impact forms and accessibility. Use a real <button> in the `render` prop, or set `nativeButton` to `false`.
+    at Button (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?98:437:263)
+    at StandingsCard (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?55:1073:285)
+    at HomePage (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?48:887:272) 
+✓ Compiled in 65ms
+ GET / 200 in 845ms (next.js: 234ms, proxy.ts: 424ms, application-code: 186ms)
+✓ Compiled in 99ms
+ GET / 200 in 1221ms (next.js: 385ms, proxy.ts: 512ms, application-code: 325ms)
+ GET /gruppespill 200 in 1225ms (next.js: 356ms, proxy.ts: 172ms, application-code: 698ms)
+✓ Compiled in 127ms
+ GET /gruppespill 200 in 1425ms (next.js: 327ms, proxy.ts: 537ms, application-code: 562ms)
+ GET /gruppespill 200 in 643ms (next.js: 11ms, proxy.ts: 400ms, application-code: 233ms)
+ GET /gruppespill 200 in 372ms (next.js: 7ms, proxy.ts: 175ms, application-code: 191ms)
+ GET /gruppespill 200 in 292ms (next.js: 9ms, proxy.ts: 138ms, application-code: 145ms)
+ GET / 200 in 1434ms (next.js: 76ms, proxy.ts: 197ms, application-code: 1161ms)
+ GET /gruppespill 200 in 817ms (next.js: 7ms, proxy.ts: 158ms, application-code: 652ms)
+✓ Compiled in 125ms
+ GET /gruppespill 200 in 713ms (next.js: 185ms, proxy.ts: 448ms, application-code: 80ms)
+ GET /gruppespill 200 in 199ms (next.js: 4ms, proxy.ts: 125ms, application-code: 70ms)

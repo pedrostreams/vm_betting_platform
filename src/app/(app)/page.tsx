@@ -54,7 +54,7 @@ export default async function HomePage() {
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div>
           <h1 className="text-2xl font-semibold tracking-tight">
-            Hei{firstName ? `, ${firstName}` : ""} 👋
+            Hei{firstName ? `, ${firstName}` : ""}
           </h1>
           <p className="text-sm text-muted-foreground">Her er det som skjer i VM-tippingen.</p>
         </div>
@@ -74,7 +74,7 @@ export default async function HomePage() {
           <CardHeader className="flex-row items-center justify-between space-y-0">
             <CardTitle className="flex items-center gap-2 text-base">
               <CalendarClock className="size-4 text-primary" />
-              Å gjøre før deadline
+              Gjøremål før deadline
             </CardTitle>
             {openUnpicked.length > 0 && (
               <Badge variant="secondary">{openUnpicked.length} utippet</Badge>
