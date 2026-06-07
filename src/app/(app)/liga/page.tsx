@@ -2,7 +2,7 @@ import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
 import { LigaForms } from "@/components/liga-forms";
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { CopyInviteButton } from "@/components/copy-invite-button";
 import { ChevronRight, Users } from "lucide-react";
 
 export default async function LigaPage() {
@@ -43,23 +43,29 @@ export default async function LigaPage() {
         ) : (
           <div className="grid gap-2">
             {pools.map((p) => (
-              <Link key={p.id} href={`/liga/${p.id}`}>
-                <Card className="transition-colors hover:bg-secondary/40">
-                  <CardContent className="flex items-center gap-3 py-4">
+              <Card key={p.id} className="transition-colors hover:bg-secondary/40">
+                <CardContent className="flex items-center gap-3 py-4">
+                  <Link href={`/liga/${p.id}`} className="flex min-w-0 flex-1 items-center gap-3">
                     <span className="grid size-9 place-items-center rounded-md bg-primary/10 text-primary">
                       <Users className="size-4" />
                     </span>
-                    <div className="min-w-0 flex-1">
+                    <div className="min-w-0">
                       <p className="truncate font-medium">{p.name}</p>
                       <p className="text-xs text-muted-foreground">
                         Kode: <span className="font-mono tracking-widest">{p.invite_code}</span>
                       </p>
                     </div>
-                    <Badge variant="secondary">Tabell</Badge>
-                    <ChevronRight className="size-4 text-muted-foreground" />
-                  </CardContent>
-                </Card>
-              </Link>
+                  </Link>
+                  <CopyInviteButton code={p.invite_code} label="Kopier lenke" />
+                  <Link
+                    href={`/liga/${p.id}`}
+                    aria-label="Åpne ligatabell"
+                    className="text-muted-foreground hover:text-foreground"
+                  >
+                    <ChevronRight className="size-4" />
+                  </Link>
+                </CardContent>
+              </Card>
             ))}
           </div>
         )}

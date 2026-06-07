@@ -43,7 +43,8 @@ export default function OnboardingPage() {
 
     setLoading(false);
     if (error) return toast.error(error.message);
-    router.replace("/");
+    const invite = new URLSearchParams(window.location.search).get("invite");
+    router.replace(invite ? `/invite/${invite}` : "/");
   }
 
   return (

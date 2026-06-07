@@ -41,7 +41,12 @@ export default function LoginPage() {
       .eq("id", userId)
       .single();
     const incomplete = !profile?.display_name || !profile?.agreed_terms_at;
-    router.replace(incomplete ? "/onboarding" : "/");
+    const invite = new URLSearchParams(window.location.search).get("invite");
+    if (incomplete) {
+      router.replace(invite ? `/onboarding?invite=${invite}` : "/onboarding");
+    } else {
+      router.replace(invite ? `/invite/${invite}` : "/");
+    }
   }
 
   async function submit(e: React.FormEvent) {
@@ -89,7 +94,7 @@ export default function LoginPage() {
             id="fullName"
             autoComplete="name"
             required
-            placeholder="Ola Nordmann"
+            placeholder="Claude Korsbøen"
             value={fullName}
             onChange={(e) => setFullName(e.target.value)}
           />
@@ -164,7 +169,8 @@ export default function LoginPage() {
           className="relative flex flex-col justify-between overflow-hidden p-12 text-white"
           style={{
             background:
-              "radial-gradient(120% 90% at 15% 10%, rgba(74,127,208,0.28), transparent 55%), linear-gradient(155deg, #0e1a2e 0%, #16243c 55%, #1b2c4a 100%)",
+              // dark overlay (keeps text legible) → web photo → gradient fallback
+              "linear-gradient(155deg, rgba(13,23,40,0.86) 0%, rgba(20,34,58,0.66) 50%, rgba(27,44,74,0.82) 100%), url('/login-hero-web.webp') center/cover no-repeat, linear-gradient(155deg, #0e1a2e 0%, #16243c 55%, #1b2c4a 100%)",
           }}
         >
           <div
@@ -188,7 +194,7 @@ export default function LoginPage() {
             <div className="space-y-4">
               <h1 className="text-6xl font-semibold leading-[0.95] tracking-tight">Tippebongen</h1>
               <p className="text-lg text-white/70">
-                Guttegjengens tippekonkurranse for fotball-VM. Lag din egen liga, tipp hver kamp og
+                Tippekonkurranse for fotball-VM. Lag din egen liga, tipp hver kamp og
                 kjemp om toppen hele sommeren.
               </p>
             </div>
@@ -224,7 +230,7 @@ export default function LoginPage() {
               </h2>
               <p className="text-sm text-muted-foreground">
                 {mode === "signin"
-                  ? "Logg inn for å se bongen og tabellen din."
+                  ? "Logg inn for å se bongen og ligatabellen."
                   : "Opprett en konto og tipp deg til topps."}
               </p>
             </div>
@@ -290,7 +296,7 @@ export default function LoginPage() {
               </SheetTitle>
               <SheetDescription>
                 {mode === "signin"
-                  ? "Logg inn for å se bongen og tabellen din."
+                  ? "Logg inn for å se bongen og ligatabellen."
                   : "Opprett en konto og tipp deg til topps."}
               </SheetDescription>
             </SheetHeader>

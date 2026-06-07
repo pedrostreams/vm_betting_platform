@@ -52,18 +52,18 @@ export default async function HomePage() {
   return (
     <div className="space-y-6">
       <div className="flex flex-wrap items-end justify-between gap-3">
-        <div>
-          <h1 className="text-2xl font-semibold tracking-tight">
-            Hei{firstName ? `, ${firstName}` : ""}
+        <div className="space-y-1">
+          <h1 className="text-3xl font-semibold tracking-tight">
+            Hei{firstName ? `, ${firstName}` : ""} 👋
           </h1>
-          <p className="text-sm text-muted-foreground">Her er det som skjer i VM-tippingen.</p>
+          <p className="text-muted-foreground">Siste nytt</p>
         </div>
         <div className="flex items-center gap-2">
           <RulesDialog />
-          <div className="flex items-center gap-2 rounded-lg border bg-card px-4 py-2">
+          <div className="flex items-center gap-2.5 rounded-full border border-primary/15 bg-primary/5 px-4 py-2">
             <Trophy className="size-4 text-primary" />
-            <span className="text-sm text-muted-foreground">Dine poeng</span>
-            <span className="text-lg font-semibold tabular-nums">{totalPoints}</span>
+            <span className="text-sm text-muted-foreground">Poeng</span>
+            <span className="text-lg font-semibold tabular-nums text-primary">{totalPoints}</span>
           </div>
         </div>
       </div>

@@ -35,6 +35,7 @@ export async function updateSession(request: NextRequest) {
   const isPublic =
     pathname.startsWith("/login") ||
     pathname.startsWith("/auth") ||
+    pathname.startsWith("/invite") ||
     pathname.startsWith("/api/cron") ||
     // Public metadata/share assets — crawlers must reach these without auth.
     pathname.startsWith("/opengraph-image") ||

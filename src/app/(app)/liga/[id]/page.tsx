@@ -9,6 +9,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
+import { CopyInviteButton } from "@/components/copy-invite-button";
 import { cn } from "@/lib/utils";
 
 interface ScoreRow {
@@ -77,7 +78,10 @@ export default async function LeaderboardPage({ params }: { params: Promise<{ id
             <span className="font-mono tracking-widest text-foreground">{pool?.invite_code}</span>
           </p>
         </div>
-        <Badge variant="secondary">{rows.length} deltakere</Badge>
+        <div className="flex items-center gap-2">
+          <Badge variant="secondary">{rows.length} deltakere</Badge>
+          {pool?.invite_code && <CopyInviteButton code={pool.invite_code} />}
+        </div>
       </div>
 
       <div className="overflow-hidden rounded-xl border bg-card">

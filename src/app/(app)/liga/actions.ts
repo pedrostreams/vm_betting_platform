@@ -40,9 +40,11 @@ export async function createPool(formData: FormData): Promise<{ error?: string }
   return { error: "Klarte ikke å lage en unik invitasjonskode. Prøv igjen." };
 }
 
-export async function joinPool(formData: FormData): Promise<{ error?: string }> {
-  const code = String(formData.get("code") ?? "").trim().toUpperCase();
-  if (!code) return { error: "Skriv inn en invitasjonskode." };
+export async function joinPoolByCode(
+  code: string,
+): Promise<{ error?: string; poolId?: string }> {
+  const clean = code.trim().toUpperCase();
+  if (!clean) return { error: "Mangler invitasjonskode." };
 
   const supabase = await createClient();
   const {
@@ -50,7 +52,11 @@ export async function joinPool(formData: FormData): Promise<{ error?: string }> 
   } = await supabase.auth.getUser();
   if (!user) return { error: "Ikke innlogget." };
 
-  const { data: pool } = await supabase.from("pools").select("id").eq("invite_code", code).maybeSingle();
+  const { data: pool } = await supabase
+    .from("pools")
+    .select("id")
+    .eq("invite_code", clean)
+    .maybeSingle();
   if (!pool) return { error: "Fant ingen liga med den koden." };
 
   const { error } = await supabase
@@ -59,5 +65,12 @@ export async function joinPool(formData: FormData): Promise<{ error?: string }> 
   if (error && error.code !== "23505") return { error: error.message };
 
   revalidatePath("/liga");
-  return {};
+  return { poolId: pool.id };
+}
+
+export async function joinPool(formData: FormData): Promise<{ error?: string }> {
+  const code = String(formData.get("code") ?? "");
+  if (!code.trim()) return { error: "Skriv inn en invitasjonskode." };
+  const { error } = await joinPoolByCode(code);
+  return error ? { error } : {};
 }

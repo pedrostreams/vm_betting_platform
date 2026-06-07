@@ -29,12 +29,20 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { ArrowUpDown, ArrowUp, ArrowDown } from "lucide-react";
+import { ArrowUpDown, ArrowUp, ArrowDown, Search } from "lucide-react";
 
 export type Row = Record<string, string | number | null>;
 
 // Columns that are text / fixed (not treated as sortable numeric stats).
-const TEXT_KEYS = new Set(["team", "group", "titleProb", "player", "position"]);
+const TEXT_KEYS = new Set(["team", "group", "titleProb", "player", "position", "crest"]);
+
+function Flag({ src }: { src: unknown }) {
+  if (typeof src !== "string" || !src) {
+    return <span className="size-4.5 shrink-0 rounded-[3px] bg-muted" aria-hidden />;
+  }
+  // eslint-disable-next-line @next/next/no-img-element
+  return <img src={src} alt="" width={18} height={18} className="size-4.5 shrink-0 rounded-[3px] object-contain" />;
+}
 
 const POSITION_LABEL: Record<string, string> = {
   G: "Keeper",
@@ -123,12 +131,15 @@ const ORDER_PLAYER = [
   "possessionLost",
 ];
 
-function SortHeader({ column, text }: { column: any; text: string }) {
+function SortHeader({ column, text, align }: { column: any; text: string; align?: "right" }) {
   const sorted = column.getIsSorted();
   return (
     <button
       onClick={() => column.toggleSorting(sorted === "asc")}
-      className="flex items-center gap-1 whitespace-nowrap hover:text-foreground"
+      className={cn(
+        "flex items-center gap-1 whitespace-nowrap hover:text-foreground",
+        align === "right" && "w-full justify-end",
+      )}
     >
       {text}
       {sorted === "asc" ? (
@@ -173,13 +184,15 @@ function statColumns(rows: Row[], order: string[]): ColumnDef<Row, unknown>[] {
   ];
   return ordered.map((key) => ({
     accessorKey: key,
-    header: ({ column }) => <SortHeader column={column} text={label(key)} />,
+    header: ({ column }) => <SortHeader column={column} text={label(key)} align="right" />,
     sortUndefined: "last",
     cell: (c) =>
       isRating(key) ? (
-        <RatingBadge value={c.getValue()} />
+        <div className="flex justify-end">
+          <RatingBadge value={c.getValue()} />
+        </div>
       ) : (
-        <span className="tabular-nums">{fmt(key, c.getValue())}</span>
+        <div className="text-right tabular-nums">{fmt(key, c.getValue())}</div>
       ),
   }));
 }
@@ -216,52 +229,66 @@ function DataTable({
   return (
     <div className="space-y-3">
       <div className="flex flex-wrap items-center gap-2">
-        <Input
-          placeholder={searchPlaceholder}
-          value={globalFilter}
-          onChange={(e) => setGlobalFilter(e.target.value)}
-          className="h-9 max-w-xs"
-        />
+        <div className="relative w-full max-w-xs">
+          <Search className="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-muted-foreground" />
+          <Input
+            placeholder={searchPlaceholder}
+            value={globalFilter}
+            onChange={(e) => setGlobalFilter(e.target.value)}
+            className="pl-9"
+          />
+        </div>
         {renderFilters?.(table)}
-        <span className="ml-auto text-sm tabular-nums text-muted-foreground">
+        <span className="ml-auto rounded-full bg-muted px-3 py-1 text-xs font-medium tabular-nums text-muted-foreground">
           {table.getRowModel().rows.length} rader
         </span>
       </div>
 
-      <div className="max-h-[calc(100dvh-14rem)] overflow-auto rounded-xl border bg-card">
-        <Table>
-          <TableHeader className="sticky top-0 z-10 bg-card">
-            {table.getHeaderGroups().map((hg) => (
-              <TableRow key={hg.id}>
-                {hg.headers.map((h) => (
-                  <TableHead key={h.id} className="whitespace-nowrap bg-card">
-                    {h.isPlaceholder ? null : flexRender(h.column.columnDef.header, h.getContext())}
-                  </TableHead>
+      <Table containerClassName="max-h-[calc(100dvh-14rem)] rounded-xl border bg-card">
+        <TableHeader className="sticky top-0 z-20 bg-card">
+          {table.getHeaderGroups().map((hg) => (
+            <TableRow key={hg.id}>
+              {hg.headers.map((h, i) => (
+                <TableHead
+                  key={h.id}
+                  className={cn(
+                    "whitespace-nowrap bg-card",
+                    i === 0 && "sticky left-0 z-30 border-r",
+                  )}
+                >
+                  {h.isPlaceholder ? null : flexRender(h.column.columnDef.header, h.getContext())}
+                </TableHead>
+              ))}
+            </TableRow>
+          ))}
+        </TableHeader>
+        <TableBody>
+          {table.getRowModel().rows.length === 0 ? (
+            <TableRow>
+              <TableCell colSpan={columns.length} className="h-24 text-center text-muted-foreground">
+                Ingen treff.
+              </TableCell>
+            </TableRow>
+          ) : (
+            table.getRowModel().rows.map((row) => (
+              <TableRow key={row.id} className="group">
+                {row.getVisibleCells().map((cell, i) => (
+                  <TableCell
+                    key={cell.id}
+                    className={cn(
+                      "whitespace-nowrap",
+                      i === 0 &&
+                        "sticky left-0 z-10 border-r bg-card group-hover:bg-muted",
+                    )}
+                  >
+                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                  </TableCell>
                 ))}
               </TableRow>
-            ))}
-          </TableHeader>
-          <TableBody>
-            {table.getRowModel().rows.length === 0 ? (
-              <TableRow>
-                <TableCell colSpan={columns.length} className="h-24 text-center text-muted-foreground">
-                  Ingen treff.
-                </TableCell>
-              </TableRow>
-            ) : (
-              table.getRowModel().rows.map((row) => (
-                <TableRow key={row.id}>
-                  {row.getVisibleCells().map((cell) => (
-                    <TableCell key={cell.id} className="whitespace-nowrap">
-                      {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                    </TableCell>
-                  ))}
-                </TableRow>
-              ))
-            )}
-          </TableBody>
-        </Table>
-      </div>
+            ))
+          )}
+        </TableBody>
+      </Table>
     </div>
   );
 }
@@ -281,7 +308,7 @@ function GroupFilter({ table }: { table: any }) {
       value={current}
       onValueChange={(v) => table.getColumn("group")?.setFilterValue(v === "all" ? undefined : v)}
     >
-      <SelectTrigger className="h-9 w-36">
+      <SelectTrigger className="h-10 w-40 rounded-lg">
         <SelectValue placeholder="Gruppe" />
       </SelectTrigger>
       <SelectContent>
@@ -301,16 +328,21 @@ export function StatsExplorer({ teamRows, playerRows }: { teamRows: Row[]; playe
     {
       accessorKey: "team",
       header: ({ column }) => <SortHeader column={column} text="Lag" />,
-      cell: (c) => <span className="font-medium">{c.getValue() as string}</span>,
+      cell: (c) => (
+        <span className="flex items-center gap-2 font-medium">
+          <Flag src={c.row.original.crest} />
+          {c.getValue() as string}
+        </span>
+      ),
     },
     { accessorKey: "group", header: "Gruppe", filterFn: "equals", cell: (c) => <span className="text-muted-foreground">{(c.getValue() as string) || "–"}</span> },
     {
       accessorKey: "titleProb",
-      header: ({ column }) => <SortHeader column={column} text="VM-odds" />,
+      header: ({ column }) => <SortHeader column={column} text="VM-odds" align="right" />,
       sortUndefined: "last",
       cell: (c) => {
         const v = c.getValue() as number | null;
-        return <span className="tabular-nums">{v == null ? "–" : `${(v * 100).toFixed(v < 0.1 ? 1 : 0)}%`}</span>;
+        return <div className="text-right tabular-nums">{v == null ? "–" : `${(v * 100).toFixed(v < 0.1 ? 1 : 0)}%`}</div>;
       },
     },
     ...statColumns(teamRows, ORDER_TEAM),
@@ -322,7 +354,16 @@ export function StatsExplorer({ teamRows, playerRows }: { teamRows: Row[]; playe
       header: ({ column }) => <SortHeader column={column} text="Spiller" />,
       cell: (c) => <span className="font-medium">{c.getValue() as string}</span>,
     },
-    { accessorKey: "team", header: ({ column }) => <SortHeader column={column} text="Lag" />, cell: (c) => <span className="text-muted-foreground">{c.getValue() as string}</span> },
+    {
+      accessorKey: "team",
+      header: ({ column }) => <SortHeader column={column} text="Lag" />,
+      cell: (c) => (
+        <span className="flex items-center gap-2 text-muted-foreground">
+          <Flag src={c.row.original.crest} />
+          <span className="truncate">{c.getValue() as string}</span>
+        </span>
+      ),
+    },
     { accessorKey: "position", header: "Pos", filterFn: "equals", cell: (c) => { const v = c.getValue() as string | null; return <span className="text-muted-foreground">{v ? POSITION_LABEL[v] ?? v : "–"}</span>; } },
     { accessorKey: "group", header: "Gruppe", filterFn: "equals", cell: (c) => <span className="text-muted-foreground">{(c.getValue() as string) || "–"}</span> },
     ...statColumns(playerRows, ORDER_PLAYER),
@@ -338,9 +379,13 @@ export function StatsExplorer({ teamRows, playerRows }: { teamRows: Row[]; playe
       </div>
 
       <Tabs defaultValue="teams">
-        <TabsList>
-          <TabsTrigger value="teams">Lag</TabsTrigger>
-          <TabsTrigger value="players">Spillere</TabsTrigger>
+        <TabsList className="h-10 rounded-full p-1">
+          <TabsTrigger value="teams" className="rounded-full px-6">
+            Lag
+          </TabsTrigger>
+          <TabsTrigger value="players" className="rounded-full px-6">
+            Spillere
+          </TabsTrigger>
         </TabsList>
 
         <TabsContent value="teams" className="mt-4">
@@ -365,7 +410,7 @@ export function StatsExplorer({ teamRows, playerRows }: { teamRows: Row[]; playe
                   defaultValue="all"
                   onValueChange={(v) => table.getColumn("position")?.setFilterValue(v === "all" ? undefined : v)}
                 >
-                  <SelectTrigger className="h-9 w-36">
+                  <SelectTrigger className="h-10 w-40 rounded-lg">
                     <SelectValue placeholder="Posisjon" />
                   </SelectTrigger>
                   <SelectContent>
