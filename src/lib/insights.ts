@@ -19,12 +19,22 @@ export interface TeamDetail {
   cleanSheets: number | null;
 }
 
+export interface KeyPlayer {
+  name: string;
+  position: string | null;
+  goals: number | null;
+  assists: number | null;
+  rating: number | null;
+  appearances: number | null;
+}
+
 export interface TeamInsight {
   titleProb: number | null;
   squadSize: number;
   avgAge: number | null;
   form: { w: number; d: number; l: number; gf: number; ga: number; recent: ("W" | "D" | "L")[] };
   detail: TeamDetail | null;
+  keyPlayers: KeyPlayer[];
 }
 
 function normalize(name: string): string {
@@ -52,7 +62,7 @@ export async function loadTeamInsights(sb: SupabaseClient): Promise<Record<numbe
         .from("matches")
         .select("home_team_id, away_team_id, home_score, away_score, status, utc_date")
         .eq("status", "FINISHED"),
-      sb.from("team_stats").select("team_id, source_tournament, matches, stats"),
+      sb.from("team_stats").select("team_id, source_tournament, matches, stats, top_players"),
       fetchCandidates(POLYMARKET_SLUG.winner),
     ]);
 
@@ -64,6 +74,7 @@ export async function loadTeamInsights(sb: SupabaseClient): Promise<Record<numbe
       avgAge: null,
       form: { w: 0, d: 0, l: 0, gf: 0, ga: 0, recent: [] },
       detail: null,
+      keyPlayers: [],
     };
   }
 
@@ -84,6 +95,15 @@ export async function loadTeamInsights(sb: SupabaseClient): Promise<Record<numbe
       rating: s.avgRating ?? null,
       cleanSheets: s.cleanSheets ?? null,
     };
+    const tp = (ts.top_players ?? []) as Record<string, number | string | null>[];
+    out[ts.team_id].keyPlayers = tp.slice(0, 5).map((p) => ({
+      name: String(p.name ?? ""),
+      position: (p.position as string) ?? null,
+      goals: (p.goals as number) ?? null,
+      assists: (p.assists as number) ?? null,
+      rating: (p.rating as number) ?? null,
+      appearances: (p.appearances as number) ?? null,
+    }));
   }
 
   // Title odds: match Polymarket candidate name -> team id.

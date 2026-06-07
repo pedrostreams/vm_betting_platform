@@ -2497,3 +2497,27 @@ Parsing ecmascript source code failed
 ✓ Compiled in 125ms
  GET /gruppespill 200 in 713ms (next.js: 185ms, proxy.ts: 448ms, application-code: 80ms)
  GET /gruppespill 200 in 199ms (next.js: 4ms, proxy.ts: 125ms, application-code: 70ms)
+[browser] Image with src "https://crests.football-data.org/760.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/cape_verde.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/773.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/813.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+ GET / 200 in 1494ms (next.js: 84ms, proxy.ts: 396ms, application-code: 1014ms)
+ GET /gruppespill 200 in 745ms (next.js: 10ms, proxy.ts: 154ms, application-code: 581ms)
+✓ Compiled in 127ms
+ GET /gruppespill 200 in 3.4s (next.js: 1562ms, proxy.ts: 1398ms, application-code: 437ms)
+ GET /gruppespill 200 in 6.4s (next.js: 40ms, proxy.ts: 855ms, application-code: 5.5s)
+[browser] Image with src "https://crests.football-data.org/769.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/9396.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+✓ Compiled in 175ms
+ GET /gruppespill 200 in 1259ms (next.js: 487ms, proxy.ts: 441ms, application-code: 331ms)
+ GET /gruppespill 200 in 533ms (next.js: 10ms, proxy.ts: 274ms, application-code: 249ms)
+ GET /gruppespill 200 in 267ms (next.js: 8ms, proxy.ts: 172ms, application-code: 87ms)
+ GET /gruppespill 200 in 169ms (next.js: 5ms, proxy.ts: 108ms, application-code: 57ms)
+✓ Compiled in 123ms
+ GET /gruppespill 200 in 1580ms (next.js: 417ms, proxy.ts: 809ms, application-code: 354ms)
+ GET /gruppespill 200 in 589ms (next.js: 9ms, proxy.ts: 337ms, application-code: 243ms)
+ GET /gruppespill 200 in 796ms (next.js: 11ms, proxy.ts: 576ms, application-code: 210ms)
+ GET /gruppespill 200 in 420ms (next.js: 10ms, proxy.ts: 160ms, application-code: 249ms)
+✓ Compiled in 184ms
+ GET /gruppespill 200 in 2.1s (next.js: 374ms, proxy.ts: 1389ms, application-code: 298ms)
+ GET /gruppespill 200 in 354ms (next.js: 9ms, proxy.ts: 149ms, application-code: 196ms)

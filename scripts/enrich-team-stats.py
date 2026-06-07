@@ -79,6 +79,37 @@ def find_team(name: str):
     return teams[0] if teams else None
 
 
+# Per-player fields we keep from the top-players tab.
+PLAYER_CATS = ["goals", "assists", "rating", "goalsAssistsSum", "keyPasses", "totalShots"]
+
+
+def top_players(team_id: int, utid: int, season_id: int) -> list[dict]:
+    data = sofa_get(
+        f"{SOFA}/team/{team_id}/unique-tournament/{utid}/season/{season_id}/top-players/overall"
+    )
+    tp = (data or {}).get("topPlayers", {})
+    players: dict[int, dict] = {}
+    for cat, lst in tp.items():
+        if cat not in PLAYER_CATS and cat != "rating":
+            continue
+        for item in lst:
+            pl = item.get("player", {})
+            pid = pl.get("id")
+            if pid is None:
+                continue
+            rec = players.setdefault(
+                pid,
+                {"name": pl.get("name"), "position": pl.get("position"),
+                 "appearances": item.get("statistics", {}).get("appearances")},
+            )
+            val = item.get("statistics", {}).get(cat)
+            if val is not None:
+                rec[cat] = round(val, 2) if isinstance(val, float) else val
+    out = list(players.values())
+    out.sort(key=lambda p: (p.get("goalsAssistsSum", 0), p.get("rating", 0)), reverse=True)
+    return out
+
+
 def pick_season(team_id: int):
     data = sofa_get(f"{SOFA}/team/{team_id}/team-statistics/seasons")
     if not data:
@@ -125,14 +156,17 @@ def main() -> int:
         s = (stat or {}).get("statistics", {})
         if not s:
             misses.append(f"{t['name']} (no stats)"); continue
+        players = top_players(sid, utid, season_id)
+        time.sleep(0.4)
         rows.append({
             "team_id": t["id"],
             "sofascore_id": sid,
             "source_tournament": f"{sname} {year}".strip(),
             "matches": s.get("matches"),
             "stats": {k: s[k] for k in KEEP if k in s},
+            "top_players": players,
         })
-        print(f"[{i}/{len(teams)}] {t['name']:<22} <- {sname} {year} ({s.get('matches')} kamper)")
+        print(f"[{i}/{len(teams)}] {t['name']:<22} <- {sname} {year} ({s.get('matches')} kamper, {len(players)} spillere)")
 
     # Upsert in one batch.
     if rows:

@@ -65,6 +65,36 @@ function TeamInsightBlock({ team, insight }: { team: Team | null; insight?: Team
           </p>
         </div>
       )}
+
+      {insight && insight.keyPlayers.length > 0 && (
+        <div className="space-y-1 border-t pt-2">
+          <p className="text-[11px] font-medium text-muted-foreground">Nøkkelspillere</p>
+          {insight.keyPlayers.map((p) => (
+            <div key={p.name} className="flex items-center gap-2 text-xs">
+              <span className="flex-1 truncate">{p.name}</span>
+              <span className="shrink-0 tabular-nums text-muted-foreground">
+                {(p.goals ?? 0) > 0 && `${p.goals}M`}
+                {(p.goals ?? 0) > 0 && (p.assists ?? 0) > 0 && " "}
+                {(p.assists ?? 0) > 0 && `${p.assists}A`}
+              </span>
+              {p.rating != null && (
+                <span
+                  className={cn(
+                    "shrink-0 rounded px-1 py-0.5 text-[10px] font-semibold tabular-nums",
+                    p.rating >= 7.5
+                      ? "bg-[var(--win)] text-[var(--win-foreground)]"
+                      : p.rating >= 7
+                        ? "bg-[var(--draw)] text-[var(--draw-foreground)]"
+                        : "bg-secondary text-muted-foreground",
+                  )}
+                >
+                  {p.rating.toFixed(2)}
+                </span>
+              )}
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
