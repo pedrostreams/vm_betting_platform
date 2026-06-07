@@ -5,15 +5,12 @@ import { createClient } from "@/lib/supabase/client";
 import { cn } from "@/lib/utils";
 import type { MatchView, Pick } from "@/lib/types";
 import { TeamBadge } from "@/components/team-badge";
+import { MatchStatsPanel } from "@/components/match-stats-panel";
+import type { TeamInsight } from "@/lib/insights";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
-import {
-  formatKickoff,
-  stageLabel,
-  KNOCKOUT_STAGES,
-  impliedProbabilities,
-} from "@/lib/format";
+import { formatKickoff, stageLabel, KNOCKOUT_STAGES } from "@/lib/format";
 import { toast } from "sonner";
 import { Check, Lock, ChevronRight, CircleDot } from "lucide-react";
 
@@ -44,10 +41,12 @@ export function KnockoutEditor({
   matches,
   initialPicks,
   userId,
+  insights,
 }: {
   matches: MatchView[];
   initialPicks: Picks;
   userId: string;
+  insights: Record<number, TeamInsight>;
 }) {
   const supabase = createClient();
   const [picks, setPicks] = useState<Picks>(initialPicks);
@@ -209,7 +208,7 @@ export function KnockoutEditor({
 
         {/* RIGHT — stats */}
         <aside className="hidden rounded-xl border bg-card p-4 lg:block">
-          {selected && <StatsPanel match={selected} />}
+          {selected && <MatchStatsPanel match={selected} insights={insights} />}
         </aside>
       </div>
     </div>
@@ -321,36 +320,3 @@ function KnockoutCanvas({
   );
 }
 
-function StatsPanel({ match }: { match: MatchView }) {
-  const probs = impliedProbabilities(
-    match.odds?.home_odds ?? null,
-    match.odds?.draw_odds ?? null,
-    match.odds?.away_odds ?? null,
-  );
-
-  return (
-    <div className="space-y-4">
-      <h2 className="text-sm font-semibold">Statistikk</h2>
-      {probs ? (
-        <div className="space-y-2">
-          <p className="text-xs text-muted-foreground">Implisitt sannsynlighet (fra odds)</p>
-          <div className="flex h-2.5 overflow-hidden rounded-full">
-            <div className="bg-[var(--chart-1)]" style={{ width: `${probs.home * 100}%` }} />
-            <div className="bg-[var(--draw)]" style={{ width: `${probs.draw * 100}%` }} />
-            <div className="bg-[var(--chart-2)]" style={{ width: `${probs.away * 100}%` }} />
-          </div>
-          <div className="flex justify-between text-xs tabular-nums text-muted-foreground">
-            <span>{Math.round(probs.home * 100)}% H</span>
-            <span>{Math.round(probs.draw * 100)}% U</span>
-            <span>{Math.round(probs.away * 100)}% B</span>
-          </div>
-        </div>
-      ) : (
-        <p className="text-xs text-muted-foreground">Odds ikke tilgjengelig ennå.</p>
-      )}
-      <div className="rounded-lg border border-dashed p-3 text-xs text-muted-foreground">
-        Lagform og statistikk kommer her.
-      </div>
-    </div>
-  );
-}

@@ -2306,3 +2306,84 @@ Parsing ecmascript source code failed
 [browser] Image with src "https://crests.football-data.org/usa.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
 [browser] Image with src "https://crests.football-data.org/761.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
 [browser] Image with src "https://crests.football-data.org/8030.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+✓ Compiled in 251ms
+ GET /login 200 in 1049ms (next.js: 260ms, proxy.ts: 703ms, application-code: 85ms)
+ GET / 200 in 1051ms (next.js: 127ms, proxy.ts: 697ms, application-code: 227ms)
+ GET / 200 in 1184ms (next.js: 228ms, proxy.ts: 833ms, application-code: 123ms)
+ GET /login 200 in 941ms (next.js: 27ms, proxy.ts: 760ms, application-code: 155ms)
+ GET / 200 in 949ms (next.js: 218ms, proxy.ts: 372ms, application-code: 359ms)
+ GET / 200 in 947ms (next.js: 53ms, proxy.ts: 760ms, application-code: 134ms)
+ GET / 200 in 801ms (next.js: 154ms, proxy.ts: 366ms, application-code: 281ms)
+ GET / 200 in 802ms (next.js: 13ms, proxy.ts: 647ms, application-code: 142ms)
+ GET / 200 in 450ms (next.js: 5ms, proxy.ts: 236ms, application-code: 209ms)
+ GET / 200 in 316ms (next.js: 5ms, proxy.ts: 205ms, application-code: 105ms)
+ GET / 200 in 1148ms (next.js: 175ms, proxy.ts: 751ms, application-code: 222ms)
+ GET / 200 in 1151ms (next.js: 289ms, proxy.ts: 753ms, application-code: 108ms)
+ GET / 200 in 1022ms (next.js: 163ms, proxy.ts: 570ms, application-code: 289ms)
+ GET / 200 in 1027ms (next.js: 9ms, proxy.ts: 913ms, application-code: 105ms)
+ GET / 200 in 890ms (next.js: 217ms, proxy.ts: 389ms, application-code: 284ms)
+ GET / 200 in 891ms (next.js: 36ms, proxy.ts: 738ms, application-code: 117ms)
+ GET / 200 in 1703ms (next.js: 360ms, proxy.ts: 698ms, application-code: 644ms)
+ GET / 200 in 1707ms (next.js: 702ms, proxy.ts: 704ms, application-code: 301ms)
+ GET / 200 in 1767ms (next.js: 10ms, proxy.ts: 1193ms, application-code: 563ms)
+ GET / 200 in 1579ms (next.js: 24ms, proxy.ts: 1235ms, application-code: 320ms)
+ GET /gruppespill 200 in 6.7s (next.js: 360ms, proxy.ts: 4.7s, application-code: 1664ms)
+ GET /gruppespill 200 in 1317ms (next.js: 52ms, proxy.ts: 1072ms, application-code: 193ms)
+ GET / 200 in 1327ms (next.js: 292ms, proxy.ts: 445ms, application-code: 590ms)
+[browser] Uncaught TypeError: Cannot read properties of undefined (reading '769')
+    at MatchStatsPanel (src/components/match-stats-panel.tsx:92:75)
+    at GruppespillPage (src\app\(app)\gruppespill\page.tsx:16:10)
+  90 | ...
+  91 | ...">
+> 92 | ...{match.home} insight={match.home ? insights[match.home.id] : undefined} />
+     |                                               ^
+  93 | ...{match.away} insight={match.away ? insights[match.away.id] : undefined} />
+  94 | ...
+  95 | ...
+✓ Compiled in 104ms
+ GET / 200 in 1159ms (next.js: 166ms, proxy.ts: 457ms, application-code: 537ms)
+ GET / 200 in 364ms (next.js: 6ms, proxy.ts: 199ms, application-code: 158ms)
+ GET / 200 in 871ms (next.js: 37ms, proxy.ts: 524ms, application-code: 309ms)
+ GET /gruppespill 200 in 2.3s (next.js: 472ms, proxy.ts: 460ms, application-code: 1382ms)
+[browser] Image with src "https://crests.football-data.org/769.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/9396.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+✓ Compiled in 90ms
+ GET /gruppespill 200 in 984ms (next.js: 165ms, proxy.ts: 465ms, application-code: 354ms)
+ GET / 200 in 985ms (next.js: 44ms, proxy.ts: 769ms, application-code: 173ms)
+ GET /gruppespill 200 in 436ms (next.js: 6ms, proxy.ts: 307ms, application-code: 123ms)
+ GET / 200 in 1307ms (next.js: 7ms, proxy.ts: 1154ms, application-code: 146ms)
+ GET /gruppespill 200 in 1179ms (next.js: 6ms, proxy.ts: 1101ms, application-code: 73ms)
+ GET / 200 in 1487ms (next.js: 7ms, proxy.ts: 1413ms, application-code: 67ms)
+[browser] Image with src "https://crests.football-data.org/798.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/8030.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/canada.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/bosnia.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/764.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/morocco.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/8601.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/766.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/805.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/825.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/760.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/cape_verde.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/773.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/senegal.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/813.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/algeria.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/765.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/congo_dr.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/770.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "https://crests.football-data.org/799.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+ GET /sluttspill 200 in 6.6s (next.js: 337ms, proxy.ts: 4.0s, application-code: 2.3s)
+ GET /special-bets 200 in 1107ms (next.js: 55ms, proxy.ts: 370ms, application-code: 681ms)
+ GET /liga 200 in 1028ms (next.js: 357ms, proxy.ts: 162ms, application-code: 509ms)
+ GET / 200 in 1150ms (next.js: 9ms, proxy.ts: 148ms, application-code: 993ms)
+[browser] Base UI: A component that acts as a button expected a native <button> because the `nativeButton` prop is true. Rendering a non-<button> removes native button semantics, which can impact forms and accessibility. Use a real <button> in the `render` prop, or set `nativeButton` to `false`.
+    at Button (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?116:437:263)
+    at HomePage (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?115:840:306) 
+[browser] Image with src "https://crests.football-data.org/usa.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Base UI: A component that acts as a button expected a native <button> because the `nativeButton` prop is true. Rendering a non-<button> removes native button semantics, which can impact forms and accessibility. Use a real <button> in the `render` prop, or set `nativeButton` to `false`.
+    at Button (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?116:437:263)
+    at StandingsCard (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?127:1074:285)
+    at HomePage (about://React/Server/C:%5CUsers%5CPeder%5CDesktop%5CHobby%5Cvm26%5C.next%5Cdev%5Cserver%5Cchunks%5Cssr%5C%5Broot-of-the-server%5D__1-1hxhr._.js?120:888:272) 
+[browser] Image with src "https://crests.football-data.org/761.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
