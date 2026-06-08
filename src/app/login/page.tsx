@@ -6,6 +6,7 @@ import { createClient } from "@/lib/supabase/client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Checkbox } from "@/components/ui/checkbox";
 import {
   Sheet,
   SheetContent,
@@ -29,6 +30,8 @@ export default function LoginPage() {
   const supabase = createClient();
   const [mode, setMode] = useState<Mode>("signin");
   const [fullName, setFullName] = useState("");
+  const [displayName, setDisplayName] = useState("");
+  const [agreed, setAgreed] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
@@ -54,10 +57,14 @@ export default function LoginPage() {
     setLoading(true);
 
     if (mode === "signup") {
+      if (!agreed) {
+        setLoading(false);
+        return toast.error("Du må godta vilkårene for å delta.");
+      }
       const { data, error } = await supabase.auth.signUp({
         email,
         password,
-        options: { data: { full_name: fullName.trim() } },
+        options: { data: { full_name: fullName.trim(), display_name: displayName.trim() } },
       });
       if (error) {
         setLoading(false);
@@ -67,7 +74,14 @@ export default function LoginPage() {
         setLoading(false);
         return toast.message("Sjekk e-posten for å bekrefte kontoen.");
       }
-      await supabase.from("profiles").update({ full_name: fullName.trim() }).eq("id", data.user!.id);
+      await supabase
+        .from("profiles")
+        .update({
+          full_name: fullName.trim(),
+          display_name: displayName.trim(),
+          agreed_terms_at: new Date().toISOString(),
+        })
+        .eq("id", data.user!.id);
       return routeAfterAuth(data.user!.id);
     }
 
@@ -88,17 +102,29 @@ export default function LoginPage() {
   const fields = (
     <form onSubmit={submit} className="space-y-3.5">
       {mode === "signup" && (
-        <div className="space-y-1.5">
-          <Label htmlFor="fullName">Fullt navn</Label>
-          <Input
-            id="fullName"
-            autoComplete="name"
-            required
-            placeholder="Claude Korsbøen"
-            value={fullName}
-            onChange={(e) => setFullName(e.target.value)}
-          />
-        </div>
+        <>
+          <div className="space-y-1.5">
+            <Label htmlFor="fullName">Fullt navn</Label>
+            <Input
+              id="fullName"
+              autoComplete="name"
+              required
+              placeholder="Claude Korsbøen"
+              value={fullName}
+              onChange={(e) => setFullName(e.target.value)}
+            />
+          </div>
+          <div className="space-y-1.5">
+            <Label htmlFor="displayName">Lagnavn</Label>
+            <Input
+              id="displayName"
+              required
+              placeholder="Hva skal laget ditt hete?"
+              value={displayName}
+              onChange={(e) => setDisplayName(e.target.value)}
+            />
+          </div>
+        </>
       )}
       <div className="space-y-1.5">
         <Label htmlFor="email">E-post</Label>
@@ -125,6 +151,20 @@ export default function LoginPage() {
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>
+      {mode === "signup" && (
+        <div className="flex items-start gap-3 rounded-lg border p-3">
+          <Checkbox
+            id="terms"
+            checked={agreed}
+            onCheckedChange={(v) => setAgreed(v === true)}
+            className="mt-0.5"
+          />
+          <Label htmlFor="terms" className="text-sm font-normal leading-snug">
+            Jeg godtar vilkårene og bekrefter en innsats (buy-in) på{" "}
+            <span className="font-semibold">200 kr</span>.
+          </Label>
+        </div>
+      )}
       <Button type="submit" size="lg" className="mt-1 w-full" disabled={loading}>
         {loading && <Loader2 className="size-4 animate-spin" />}
         {mode === "signin" ? "Logg inn" : "Opprett konto"}

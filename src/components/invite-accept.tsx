@@ -1,13 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { joinPoolByCode } from "@/app/(app)/liga/actions";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import { Loader2 } from "lucide-react";
 
-export function InviteAccept({ code, poolId }: { code: string; poolId: string }) {
+export function InviteAccept({ code }: { code: string }) {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
 
@@ -18,7 +19,8 @@ export function InviteAccept({ code, poolId }: { code: string; poolId: string })
       setLoading(false);
       return toast.error(res.error);
     }
-    router.replace(`/liga/${res.poolId ?? poolId}`);
+    toast.success("Du er med i ligaen! 🎉");
+    router.replace("/");
   }
 
   return (
@@ -27,7 +29,7 @@ export function InviteAccept({ code, poolId }: { code: string; poolId: string })
         {loading && <Loader2 className="size-4 animate-spin" />}
         Bli med
       </Button>
-      <Button render={<a href="/" />} variant="ghost" className="w-full">
+      <Button render={<Link href="/" />} variant="ghost" className="w-full">
         Ikke nå
       </Button>
     </div>

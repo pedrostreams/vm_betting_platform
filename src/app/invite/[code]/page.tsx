@@ -81,7 +81,7 @@ export default async function InvitePage({ params }: { params: Promise<{ code: s
   return (
     <Shell>
       <InviteCard poolName={pool.name} buyIn={pool.buy_in_nok}>
-        <InviteAccept code={upper} poolId={pool.id} />
+        <InviteAccept code={upper} />
       </InviteCard>
     </Shell>
   );
