@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useTransition } from "react";
+import Link from "next/link";
 import { setSpecialResult, runGrading } from "@/app/(app)/admin/actions";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -15,7 +16,7 @@ import {
   CommandItem,
   CommandList,
 } from "@/components/ui/command";
-import { Check, ChevronsUpDown, Calculator, Trophy } from "lucide-react";
+import { Check, ChevronsUpDown, Calculator, Trophy, RefreshCw } from "lucide-react";
 import { toast } from "sonner";
 
 export interface AdminBet {
@@ -46,10 +47,16 @@ export function AdminGrading({ bets }: { bets: AdminBet[] }) {
             Bekreft special-bet-vinnere og kjør poengberegning.
           </p>
         </div>
-        <Button onClick={grade} disabled={grading} className="gap-2">
-          <Calculator className="size-4" />
-          {grading ? "Beregner …" : "Kjør poengberegning"}
-        </Button>
+        <div className="flex flex-wrap gap-2">
+          <Button variant="outline" className="gap-2" render={<Link href="/admin/sync" />}>
+            <RefreshCw className="size-4" />
+            Synkronisering
+          </Button>
+          <Button onClick={grade} disabled={grading} className="gap-2">
+            <Calculator className="size-4" />
+            {grading ? "Beregner …" : "Kjør poengberegning"}
+          </Button>
+        </div>
       </div>
 
       <div className="grid gap-4 md:grid-cols-2">

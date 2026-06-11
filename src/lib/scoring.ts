@@ -6,6 +6,7 @@
 // Special bets: admin-confirmed winners, points per bet type.
 
 import type { SupabaseClient } from "@supabase/supabase-js";
+import type { Log } from "@/lib/ingest/log";
 
 type WinnerField = "HOME_TEAM" | "AWAY_TEAM" | "DRAW" | null;
 
@@ -30,7 +31,7 @@ interface ScoreAcc {
   correct_special_count: number;
 }
 
-export async function gradeAll(sb: SupabaseClient): Promise<{ users: number }> {
+export async function gradeAll(sb: SupabaseClient, log?: Log): Promise<{ users: number }> {
   const [stagePts, matches, preds, profiles, sbResults, sbPicks, sbTypes] = await Promise.all([
     sb.from("stage_points").select("stage, points"),
     sb.from("matches").select("id, stage, status, home_score, away_score, winner"),
@@ -45,6 +46,12 @@ export async function gradeAll(sb: SupabaseClient): Promise<{ users: number }> {
   const matchById = new Map((matches.data ?? []).map((m) => [m.id, m]));
   const sbPointsById = new Map((sbTypes.data ?? []).map((t) => [t.id, t.points]));
   const resultById = new Map((sbResults.data ?? []).map((r) => [r.bet_type_id, r]));
+
+  const finished = (matches.data ?? []).filter((m) => m.status === "FINISHED").length;
+  log?.(
+    "info",
+    `${finished} ferdige kamper, ${preds.data?.length ?? 0} tips, ${sbResults.data?.length ?? 0} special-resultater`,
+  );
 
   const acc = new Map<string, ScoreAcc>();
   const ensure = (uid: string) => {
@@ -101,6 +108,9 @@ export async function gradeAll(sb: SupabaseClient): Promise<{ users: number }> {
     const { error } = await sb.from("user_scores").upsert(rows.slice(i, i + 200), { onConflict: "user_id" });
     if (error) throw new Error(`upsert user_scores: ${error.message}`);
   }
+
+  const totalPoints = rows.reduce((sum, r) => sum + r.total_points, 0);
+  log?.("ok", `Poeng beregnet for ${rows.length} deltakere (${totalPoints} p totalt utdelt)`);
 
   return { users: rows.length };
 }

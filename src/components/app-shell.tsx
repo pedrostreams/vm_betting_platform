@@ -79,7 +79,9 @@ export function AppShell({
   const moreActive = MORE_NAV.some(({ href }) => isActive(href));
 
   async function signOut() {
-    await supabase.auth.signOut();
+    // scope: "local" signs out only this device. The default ("global")
+    // revokes every session on every device for the account.
+    await supabase.auth.signOut({ scope: "local" });
     router.push("/login");
   }
 

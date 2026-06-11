@@ -6,6 +6,7 @@
 // logged but never fatal — odds are decision-support ("snacks"), not scoring.
 
 import type { SupabaseClient } from "@supabase/supabase-js";
+import type { Log } from "@/lib/ingest/log";
 
 const NT_BASE = "https://api.norsk-tipping.no/OddsenGameInfo/v1/api/events/FBL";
 const WC_TOURNAMENT_ID = "45613";
@@ -76,7 +77,10 @@ function ymd(d: Date): string {
   return d.toISOString().slice(0, 10).replace(/-/g, "");
 }
 
-export async function syncOdds(sb: SupabaseClient): Promise<{ matched: number; unmatched: number }> {
+export async function syncOdds(
+  sb: SupabaseClient,
+  log?: Log,
+): Promise<{ matched: number; unmatched: number }> {
   // Window: today → +45 days (covers everything Norsk Tipping has posted).
   const from = new Date();
   const to = new Date(from.getTime() + 45 * 86_400_000);
@@ -90,6 +94,10 @@ export async function syncOdds(sb: SupabaseClient): Promise<{ matched: number; u
   const data = (await res.json()) as { eventList?: NtEvent[] };
   const events = (data.eventList ?? []).filter(
     (e) => e.tournament?.id === WC_TOURNAMENT_ID && e.mainMarket?.marketName === "HUB",
+  );
+  log?.(
+    "info",
+    `Norsk Tipping: ${data.eventList?.length ?? 0} hendelser, ${events.length} med HUB-marked i VM`,
   );
 
   // Load our matches with team names for matching.
@@ -147,6 +155,10 @@ export async function syncOdds(sb: SupabaseClient): Promise<{ matched: number; u
     if (error) throw new Error(`upsert match_odds: ${error.message}`);
   }
   if (unmatched) console.warn(`[odds] ${unmatched} Norsk Tipping events did not match a fixture`);
+  log?.(
+    unmatched ? "warn" : "ok",
+    `Odds: ${rows.length} kamper oppdatert, ${unmatched} hendelser uten match`,
+  );
 
   return { matched: rows.length, unmatched };
 }
