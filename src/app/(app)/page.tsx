@@ -9,6 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { formatKickoff, formatTime } from "@/lib/format";
 import { RulesDialog } from "@/components/rules-dialog";
+import { AnnouncementBanner } from "@/components/announcement-banner";
 import {
   ArrowRight,
   CalendarClock,
@@ -51,6 +52,8 @@ export default async function HomePage() {
 
   return (
     <div className="space-y-6">
+      <AnnouncementBanner />
+
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div className="space-y-1">
           <h1 className="text-3xl font-semibold tracking-tight">
