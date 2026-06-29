@@ -5,6 +5,8 @@
 //   /api/cron/odds              Norsk Tipping HUB odds
 //   /api/cron/news              Independent RSS
 //   /api/cron/grade             recompute scores
+//   /api/cron/summary           daily "Morten Ramm" email (results 24h + table)
+//                               ?force=1 sends even with no matches; ?test=<email>|1 sends only to you
 //   /api/cron/all               all of the above, in order
 
 import { NextResponse } from "next/server";
@@ -12,6 +14,7 @@ import { adminClient } from "@/lib/supabase/admin";
 import { syncTournament } from "@/lib/ingest/tournament";
 import { syncOdds } from "@/lib/ingest/odds";
 import { gradeAll } from "@/lib/scoring";
+import { sendDailySummary } from "@/lib/summary";
 
 export const dynamic = "force-dynamic";
 export const maxDuration = 60;
@@ -51,6 +54,20 @@ export async function GET(req: Request, { params }: { params: Promise<{ job: str
       }
       const grade = await gradeAll(sb);
       return NextResponse.json({ job, ms: Date.now() - started, tournament, odds, grade });
+    }
+
+    if (job === "summary") {
+      const sp = new URL(req.url).searchParams;
+      const force = sp.get("force") === "1";
+      // ?test=1 → SUMMARY_TEST_EMAIL (fallback pedertanberg@gmail.com); ?test=<email> → that address.
+      const testParam = sp.get("test");
+      const testEmail = testParam
+        ? testParam === "1"
+          ? process.env.SUMMARY_TEST_EMAIL || "pedertanberg@gmail.com"
+          : testParam
+        : undefined;
+      const result = await sendDailySummary(sb, { force, testEmail });
+      return NextResponse.json({ job, ms: Date.now() - started, result });
     }
 
     const fn = JOBS[job as keyof typeof JOBS];

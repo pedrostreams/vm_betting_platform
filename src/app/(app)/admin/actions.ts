@@ -8,6 +8,7 @@ import { gradeAll } from "@/lib/scoring";
 import { syncTournament } from "@/lib/ingest/tournament";
 import { syncOdds } from "@/lib/ingest/odds";
 import { makeLogCollector, type LogLine } from "@/lib/ingest/log";
+import { sendDailySummary, type SummaryResult } from "@/lib/summary";
 
 export async function setSpecialResult(
   betTypeId: string,
@@ -87,5 +88,26 @@ export async function runSync(job: SyncJob): Promise<SyncRunResult> {
   } catch (e) {
     log("error", (e as Error).message);
     return { ms: Date.now() - started, log: lines, error: (e as Error).message };
+  }
+}
+
+/**
+ * Trigger the daily summary email from the admin UI. `test: true` sends only to
+ * SUMMARY_TEST_EMAIL; otherwise it goes to everyone. Both force-send (the admin
+ * clicked deliberately), bypassing the "no matches today" skip.
+ */
+export async function runSummary(opts: { test?: boolean } = {}): Promise<{ error?: string; result?: SummaryResult }> {
+  const supabase = await createClient();
+  if (!(await isAdmin(supabase))) return { error: "Ikke tilgang." };
+
+  try {
+    const testEmail = opts.test
+      ? process.env.SUMMARY_TEST_EMAIL || "pedertanberg@gmail.com"
+      : undefined;
+    const result = await sendDailySummary(adminClient(), { force: true, testEmail });
+    revalidatePath("/admin/sync");
+    return { result };
+  } catch (e) {
+    return { error: (e as Error).message };
   }
 }
