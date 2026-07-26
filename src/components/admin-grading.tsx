@@ -10,20 +10,20 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import {
   Command,
-  CommandEmpty,
   CommandGroup,
   CommandInput,
   CommandItem,
   CommandList,
 } from "@/components/ui/command";
-import { Check, ChevronsUpDown, Calculator, Trophy, RefreshCw } from "lucide-react";
+import { Check, ChevronsUpDown, Calculator, Trophy, RefreshCw, Plus } from "lucide-react";
 import { toast } from "sonner";
 
 export interface AdminBet {
   id: string;
   name: string;
   points: number;
-  options: string[];
+  /** Candidates participants actually picked, with pick counts (desc). */
+  options: { name: string; count: number }[];
   winner: string | null;
 }
 
@@ -77,21 +77,34 @@ function ResultCard({ bet }: { bet: AdminBet }) {
   const [winner, setWinner] = useState<string | null>(bet.winner);
   const [open, setOpen] = useState(false);
   const [saving, setSaving] = useState(false);
+  const [query, setQuery] = useState("");
 
   async function choose(candidate: string) {
+    const value = candidate.trim();
+    if (!value) return;
     setOpen(false);
+    setQuery("");
     const prev = winner;
-    setWinner(candidate);
+    setWinner(value);
     setSaving(true);
-    const res = await setSpecialResult(bet.id, candidate);
+    const res = await setSpecialResult(bet.id, value);
     setSaving(false);
     if (res.error) {
       setWinner(prev);
       toast.error(res.error);
     } else {
-      toast.success(`Vinner satt: ${candidate}`);
+      toast.success(`Vinner satt: ${value}`);
     }
   }
+
+  const q = query.trim();
+  const filtered = q
+    ? bet.options.filter((o) => o.name.toLowerCase().includes(q.toLowerCase()))
+    : bet.options;
+  // Offer free-text entry when the query doesn't exactly match a picked candidate
+  // (e.g. the real winner nobody guessed). Grading only awards points on an exact
+  // string match, so a manual value that matches nothing simply awards nobody.
+  const exactMatch = bet.options.some((o) => o.name === q);
 
   return (
     <Card>
@@ -105,7 +118,13 @@ function ResultCard({ bet }: { bet: AdminBet }) {
         </Badge>
       </CardHeader>
       <CardContent>
-        <Popover open={open} onOpenChange={setOpen}>
+        <Popover
+          open={open}
+          onOpenChange={(next) => {
+            setOpen(next);
+            if (!next) setQuery("");
+          }}
+        >
           <PopoverTrigger
             render={<Button variant="outline" disabled={saving} className="w-full justify-between font-normal" />}
           >
@@ -115,17 +134,37 @@ function ResultCard({ bet }: { bet: AdminBet }) {
             <ChevronsUpDown className="size-4 opacity-50" />
           </PopoverTrigger>
           <PopoverContent className="w-80 p-0" align="start">
-            <Command>
-              <CommandInput placeholder="Søk …" />
+            <Command shouldFilter={false}>
+              <CommandInput
+                placeholder="Søk eller skriv inn vinner …"
+                value={query}
+                onValueChange={setQuery}
+              />
               <CommandList>
-                <CommandEmpty>Ingen kandidater (Polymarket utilgjengelig?).</CommandEmpty>
                 <CommandGroup>
-                  {bet.options.map((name) => (
-                    <CommandItem key={name} value={name} onSelect={() => choose(name)}>
-                      <Check className={cn("size-4", winner === name ? "opacity-100" : "opacity-0")} />
-                      <span className="flex-1 truncate">{name}</span>
+                  {filtered.map((o) => (
+                    <CommandItem key={o.name} value={o.name} onSelect={() => choose(o.name)}>
+                      <Check className={cn("size-4", winner === o.name ? "opacity-100" : "opacity-0")} />
+                      <span className="flex-1 truncate">{o.name}</span>
+                      <span className="shrink-0 text-xs text-muted-foreground tabular-nums">
+                        {o.count} tips
+                      </span>
                     </CommandItem>
                   ))}
+                  {q && !exactMatch && (
+                    <CommandItem value={`__freetext__${q}`} onSelect={() => choose(q)}>
+                      <Plus className="size-4" />
+                      <span className="flex-1 truncate">
+                        Sett «{q}» som vinner
+                      </span>
+                      <span className="shrink-0 text-xs text-muted-foreground">ingen tips</span>
+                    </CommandItem>
+                  )}
+                  {filtered.length === 0 && !q && (
+                    <p className="px-2 py-6 text-center text-sm text-muted-foreground">
+                      Ingen har tippet her ennå. Skriv inn vinneren for å sette den manuelt.
+                    </p>
+                  )}
                 </CommandGroup>
               </CommandList>
             </Command>

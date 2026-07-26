@@ -33,7 +33,7 @@ export default async function HomePage() {
   } = await supabase.auth.getUser();
 
   const [matches, picks, profileRes, scoreRes, news, standings] = await Promise.all([
-    loadMatches(supabase, { stage: "GROUP_STAGE" }),
+    loadMatches(supabase),
     loadUserPicks(supabase, user!.id),
     supabase.from("profiles").select("display_name, full_name").eq("id", user!.id).single(),
     supabase.from("user_scores").select("total_points").eq("user_id", user!.id).maybeSingle(),
@@ -43,9 +43,16 @@ export default async function HomePage() {
 
   const now = Date.now();
   const openUnpicked = matches
-    .filter((m) => !picks[m.id] && new Date(m.lock_at).getTime() > now)
+    .filter(
+      (m) =>
+        m.home &&
+        m.away &&
+        !picks[m.id] &&
+        new Date(m.lock_at).getTime() > now,
+    )
     .sort((a, b) => new Date(a.lock_at).getTime() - new Date(b.lock_at).getTime());
   const today = matches.filter((m) => isToday(m.utc_date));
+  const pickHref = (m: MatchView) => (m.stage === "GROUP_STAGE" ? "/gruppespill" : "/sluttspill");
 
   const firstName = (profileRes.data?.full_name ?? profileRes.data?.display_name ?? "").split(" ")[0];
   const totalPoints = scoreRes.data?.total_points ?? 0;
@@ -93,7 +100,7 @@ export default async function HomePage() {
                 {openUnpicked.slice(0, 5).map((m) => (
                   <Link
                     key={m.id}
-                    href="/gruppespill"
+                    href={pickHref(m)}
                     className="flex items-center gap-3 rounded-lg px-2 py-2 text-sm transition-colors hover:bg-secondary/50"
                   >
                     <span className="flex min-w-0 flex-1 items-center gap-2">
@@ -110,12 +117,13 @@ export default async function HomePage() {
                 ))}
                 <div className="pt-2">
                   <Button
-                    render={<Link href="/gruppespill" />}
+                    render={<Link href={pickHref(openUnpicked[0])} />}
                     variant="outline"
                     size="sm"
                     className="w-full"
                   >
-                    Til gruppespill <ArrowRight className="size-4" />
+                    {openUnpicked[0].stage === "GROUP_STAGE" ? "Til gruppespill" : "Til sluttspill"}{" "}
+                    <ArrowRight className="size-4" />
                   </Button>
                 </div>
               </div>

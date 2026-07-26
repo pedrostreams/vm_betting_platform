@@ -38,11 +38,11 @@ import {
 
 const NAV = [
   { href: "/", label: "Hjem", short: "Hjem", icon: Home },
-  { href: "/gruppespill", label: "Gruppespill", short: "Grupper", icon: Users },
   { href: "/sluttspill", label: "Sluttspill", short: "Sluttspill", icon: Trophy },
+  { href: "/liga", label: "Liga", short: "Liga", icon: Shield },
   { href: "/special-bets", label: "Special bets", short: "Spesial", icon: Star },
   { href: "/statistikk", label: "Data Hub", short: "Data Hub", icon: BarChart3 },
-  { href: "/liga", label: "Liga", short: "Liga", icon: Shield },
+  { href: "/gruppespill", label: "Gruppespill", short: "Grupper", icon: Users },
 ];
 
 // Mobile bottom bar: first four are tabs, the rest live in a "Mer" sheet.
